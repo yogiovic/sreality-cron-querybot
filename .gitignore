@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyCharm project files
+.idea/
+
+# Distribution / packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Generated scraper artifacts
+*.html
+extracted_*.json
+result_*.json
+results.json
+script_candidate_*.txt
+listings_examples.json
+
+# macOS
+.DS_Store
+
+# Virtual environments
+.env
+.venv
+venv/
+
+# Node
+node_modules/
+
+# Ignore local environment files
+.env.local
+

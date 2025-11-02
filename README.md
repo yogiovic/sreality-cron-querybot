@@ -1,1 +1,0 @@
-# sreality-cron-querybot
