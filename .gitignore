@@ -16,13 +16,17 @@ dist/
 *.log
 *.sqlite3
 
-# Generated scraper artifacts
-*.html
+# Generated scraper artifacts (ignore everything generated, but keep results.json and per-page results)
 extracted_*.json
+extracted_p*_*
 result_*.json
-results.json
 script_candidate_*.txt
-listings_examples.json
+page_raw*.html
+page_pretty*.html
+
+# Un-ignore the main aggregated results we want to keep
+!results.json
+!results_p*.json
 
 # macOS
 .DS_Store
@@ -37,4 +41,3 @@ node_modules/
 
 # Ignore local environment files
 .env.local
-
