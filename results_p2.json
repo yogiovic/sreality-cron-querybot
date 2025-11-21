@@ -1,0 +1,3527 @@
+[
+  {
+    "categoryMainCb": {
+      "name": "Domy",
+      "value": 2
+    },
+    "categorySubCb": {
+      "name": "Na klíč",
+      "value": 40
+    },
+    "categoryTypeCb": {
+      "name": "Prodej",
+      "value": 1
+    },
+    "discountShow": true,
+    "id": 2231554892,
+    "hasMatterport": false,
+    "hasVideo": false,
+    "images": [
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_C/kOdLsFJxntEE92RhBE8RivI/a0d0.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/nO1Ur3YPjBBGDkbDbSErQUti/ff7a.jpeg",
+        "restbType": 20,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_C/kOdLsFJxntEE92RhME8RiwK/e6d6.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_C/kOdLsFJxntCI7C8kJE8RixM/2abf.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_C/kOdLsFJxntBY7gzihE8Riyk/4968.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_C/nPadKnN9M1Dbjqgn5E8Rizw/8e36.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_C/kOdLsFJxntBzxsLjbE8Ri00/9d81.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_C/kOdLsFJxntEE92RhKE8Ri2B/f3cc.jpeg",
+        "restbType": 21,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_C/nPadKnN9M1BxwJZiaE8Ri3H/29bb.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_C/nPadKnN9M1EEOp8mBE8Ri4M/b26e.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBNaf8EKsErzDiP/2b07.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBDN2yrEI4ErzDkI/d3cd.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoKFXECWMErzDlV/da9f.jpeg",
+        "restbType": 26,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoCswkNDR1ErzDmi/f891.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBDmHSdEJYErzDoL/82cc.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoDiQhqDS4ErzDpW/314e.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBsRXRENMErzDrW/833d.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoCswkNDQ0ErzDsp/537e.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBNaf8EKPErzDuD/6937.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoChS4kDTCErzDvd/1838.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBC0ZD7EKvErzDxd/9924.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoDiQhqDVKErzDyg/16c7.jpeg",
+        "restbType": 24,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBDN2yrEJtErzDzi/fe12.jpeg",
+        "restbType": 22,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBBGDkbEHwErzD0o/42ce.jpeg",
+        "restbType": 22,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBDmHSdEI8ErzD18/9e04.jpeg",
+        "restbType": 22,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoBSGGoDOHErzD3L/02ab.jpeg",
+        "restbType": 22,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBCBv9BENwErzD44/9b40.jpeg",
+        "restbType": 2,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBNlDMEK3ErzD6G/41f1.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoChS4kDOhErzD7S/cc29.jpeg",
+        "restbType": 23,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBsRXRENrErzD8t/c3ba.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoC2bQRDQ9ErzD92/118a.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoBSGGoDOlErzEBq/6ebb.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBBGDkbEIXErzEC5/45d6.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoChS4kDTCErzEEP/f692.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBC0ZD7EKvErzEFa/ea56.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_C/kOdLsFJxntBS4lxfzE8Ri5m/4181.jpeg",
+        "restbType": 0,
+        "order": null
+      }
+    ],
+    "locality": {
+      "city": "Mělník",
+      "citySeoName": "melnik",
+      "cityPart": "",
+      "cityPartSeoName": null,
+      "country": "Česká republika",
+      "countryId": 112,
+      "district": "Mělník",
+      "districtId": 54,
+      "districtSeoName": "melnik",
+      "entityType": "municipality",
+      "geoHash": "u2fq3xqst4",
+      "houseNumber": "",
+      "inaccuracyType": "gps",
+      "latitude": 50.357994,
+      "longitude": 14.4891247,
+      "municipality": null,
+      "municipalityId": 3859,
+      "municipalitySeoName": null,
+      "quarter": null,
+      "quarterId": null,
+      "region": "Středočeský kraj",
+      "regionId": 11,
+      "regionSeoName": "stredocesky-kraj",
+      "street": "",
+      "streetId": null,
+      "streetNumber": "",
+      "streetSeoName": null,
+      "ward": null,
+      "wardId": null,
+      "wardSeoName": null,
+      "zip": null
+    },
+    "name": "Prodej projektu na klíč 114 m², pozemek 836 m²",
+    "premiseLogo": "https://d48-a.sdn.cz/d_48/c_img_gX_k/l2aSlr.png",
+    "premiseId": 48374,
+    "premise": {
+      "seoName": "next-reality-happy-real",
+      "wardSeoName": "melnik",
+      "quarterSeoName": "",
+      "citySeoName": "melnik"
+    },
+    "priceCzk": 8900000,
+    "priceCzkPerSqM": 78070,
+    "priceSummaryCzk": 8900000,
+    "priceSummaryUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "priceUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "watchdogBadge": "none"
+  },
+  {
+    "categoryMainCb": {
+      "name": "Domy",
+      "value": 2
+    },
+    "categorySubCb": {
+      "name": "Vícegenerační dům",
+      "value": 54
+    },
+    "categoryTypeCb": {
+      "name": "Prodej",
+      "value": 1
+    },
+    "discountShow": false,
+    "id": 3962094156,
+    "hasMatterport": false,
+    "hasVideo": true,
+    "images": [
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/nO1Ur3YPjBNlDMCR9Eos3h3/06e9.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/kOzmiQlmfoDdPdoBwGEos3jE/fc7d.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/kOzmiQlmfoQAuLBsiEos3kV/1f84.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/kOzmiQlmfoKFXExXEos3l4/1ee8.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/kOzmiQlmfoDuFBcBscEos3nb/7361.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/kOzmiQlmfoQAuLBsrEos3pD/5844.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/kOzmiQlmfoQAuLBs0Eos3qU/597d.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/kOzmiQlmfoChS4kBtzEos3rk/b9ad.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/kOzmiQlmfoCswkNBtHEos3tB/f055.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/nO1Ur3YPjBBGDkbCTGEos3uI/6b41.jpeg",
+        "restbType": 17,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/nO1Ur3YPjBDmHSdCUOEos3vg/6d7e.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/kOzmiQlmfoBuCN3wqEos3we/538e.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/nO1Ur3YPjBDN2yrCSwEos3xV/7e97.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/kOzmiQlmfoBuCN3x8Eos3zI/4dcb.jpeg",
+        "restbType": 1,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/nO1Ur3YPjBDmHSdCUOEos30I/9fb8.jpeg",
+        "restbType": 5,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/nO1Ur3YPjBsRXRCWIEos31J/2c48.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/nO1Ur3YPjBDmHSdCUOEos318/0c72.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/kOzmiQlmfoDuFBcBscEos33m/1528.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/nO1Ur3YPjBDN2yrCS5Eos35Q/d0f2.jpeg",
+        "restbType": 12,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/nO1Ur3YPjBBGDkbCS7Eos36K/a5d2.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/nO1Ur3YPjBD7Q0hCTWEos38H/9655.jpeg",
+        "restbType": 23,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_C/nO1Ur3YPjBD7Q0hCTWEos4BK/bcef.jpeg",
+        "restbType": 23,
+        "order": null
+      }
+    ],
+    "locality": {
+      "city": "Mělník",
+      "citySeoName": "melnik",
+      "cityPart": "Mělník",
+      "cityPartSeoName": "melnik",
+      "country": "Česká republika",
+      "countryId": 112,
+      "district": "Mělník",
+      "districtId": 54,
+      "districtSeoName": "melnik",
+      "entityType": "address",
+      "geoHash": "u2fq92877z",
+      "houseNumber": "1042",
+      "inaccuracyType": "gps",
+      "latitude": 50.3646726,
+      "longitude": 14.4694987,
+      "municipality": null,
+      "municipalityId": 3859,
+      "municipalitySeoName": null,
+      "quarter": null,
+      "quarterId": null,
+      "region": "Středočeský kraj",
+      "regionId": 11,
+      "regionSeoName": "stredocesky-kraj",
+      "street": "Baráčnická",
+      "streetId": 103920,
+      "streetNumber": "8",
+      "streetSeoName": "baracnicka",
+      "ward": null,
+      "wardId": 13863,
+      "wardSeoName": null,
+      "zip": null
+    },
+    "name": "Prodej vícegeneračního domu 140 m², pozemek 1002 m²",
+    "premiseLogo": "",
+    "premiseId": 20658,
+    "premise": {
+      "seoName": "century-21-4fin-reality",
+      "wardSeoName": "nusle",
+      "quarterSeoName": "praha-4",
+      "citySeoName": "praha"
+    },
+    "priceCzk": 9490000,
+    "priceCzkPerSqM": 67786,
+    "priceSummaryCzk": 9490000,
+    "priceSummaryUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "priceUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "watchdogBadge": "none"
+  },
+  {
+    "categoryMainCb": {
+      "name": "Domy",
+      "value": 2
+    },
+    "categorySubCb": {
+      "name": "Rodinný",
+      "value": 37
+    },
+    "categoryTypeCb": {
+      "name": "Prodej",
+      "value": 1
+    },
+    "discountShow": false,
+    "id": 1320584012,
+    "hasMatterport": false,
+    "hasVideo": false,
+    "images": [
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8BW941B19Ec6Pjn/2756.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8CO44ZB6JEc6PkI/0a62.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8C2TnDB85Ec6Pkj/3f50.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/nPSV1TXV2nBaI13CtJEc6Pk6/0ede.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8BFAxJB5yEc6Plb/beef.jpeg",
+        "restbType": 26,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8CDPLmB4LEc6Pl8/c7d5.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8CO44ZB6KEc6PmX/e089.jpeg",
+        "restbType": 1,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8BW941B3MEc6Pmw/5dfa.jpeg",
+        "restbType": 5,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8BjyTHB6QEc6PnT/e4b5.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8KV2SB55Ec6Pnr/a7ea.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/nPSV1TXV2nBaI13CtJEc6PoL/d26f.jpeg",
+        "restbType": 3,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/nPSV1TXV2nClkYSBbOEc6Pox/0bce.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8CDPLmB4AEc6Ppa/86a3.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8CO44ZB6KEc6Pp0/2309.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/nPSV1TXV2nrwBeBZ3Ec6PqT/304a.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/nPSV1TXV2nBaI13CrLEc6Pqu/7918.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/nPSV1TXV2nBusAfCs8Ec6PrG/d4f7.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8BjyTHB6REc6Prh/8c0c.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/nPSV1TXV2nBaI13CtJEc6Pr3/9fa2.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8B9O11B8GEc6PsL/9976.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8KV2SB55Ec6Psp/ed17.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8CO44ZB6KEc6PtH/4993.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8BjyTHB6REc6Pth/2ba0.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8zSZiB5wEc6Pt5/27c9.jpeg",
+        "restbType": 29,
+        "order": null
+      }
+    ],
+    "locality": {
+      "city": "Mělník",
+      "citySeoName": "melnik",
+      "cityPart": "Mělník",
+      "cityPartSeoName": "melnik",
+      "country": "Česká republika",
+      "countryId": 112,
+      "district": "Mělník",
+      "districtId": 54,
+      "districtSeoName": "melnik",
+      "entityType": "address",
+      "geoHash": "u2fq9ctuuy",
+      "houseNumber": "4345",
+      "inaccuracyType": "address",
+      "latitude": 50.3704172254278,
+      "longitude": 14.4990677270416,
+      "municipality": null,
+      "municipalityId": 3859,
+      "municipalitySeoName": null,
+      "quarter": null,
+      "quarterId": null,
+      "region": "Středočeský kraj",
+      "regionId": 11,
+      "regionSeoName": "stredocesky-kraj",
+      "street": "Zemědělská",
+      "streetId": 104133,
+      "streetNumber": "",
+      "streetSeoName": "zemedelska",
+      "ward": null,
+      "wardId": 13863,
+      "wardSeoName": null,
+      "zip": null
+    },
+    "name": "Prodej rodinného domu 378 m², pozemek 788 m²",
+    "premiseLogo": "",
+    "premiseId": 717,
+    "premise": {
+      "seoName": "1-nonstop-reality",
+      "wardSeoName": "jihlava",
+      "quarterSeoName": "",
+      "citySeoName": "jihlava"
+    },
+    "priceCzk": 15960000,
+    "priceCzkPerSqM": 42222,
+    "priceSummaryCzk": 15960000,
+    "priceSummaryUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "priceUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "watchdogBadge": "none"
+  },
+  {
+    "categoryMainCb": {
+      "name": "Domy",
+      "value": 2
+    },
+    "categorySubCb": {
+      "name": "Rodinný",
+      "value": 37
+    },
+    "categoryTypeCb": {
+      "name": "Prodej",
+      "value": 1
+    },
+    "discountShow": false,
+    "id": 2875769676,
+    "hasMatterport": false,
+    "hasVideo": false,
+    "images": [
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoCswkNXuEkcQk9/e206.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoQAuLXpEkcQli/2e9f.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBBGDkbX1EkcQmM/f411.jpeg",
+        "restbType": 1,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoCMZL9XnEkcQm3/d64b.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoDiQhqXmEkcQnl/945b.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoCMZL9VyEkcQoI/6342.jpeg",
+        "restbType": 1,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBDN2yrX0EkcQot/c348.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoDdPdoXEEkcQpb/39b9.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoBEqdwXCEkcQqE/7ef2.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoQAuLXpEkcQqj/c3c2.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBCBv9BX0EkcQrB/ab5a.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoBEqdwXCEkcQri/1894.jpeg",
+        "restbType": 1,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoDuFBcW4EkcQsR/ff9a.jpeg",
+        "restbType": 8,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoChS4kXcEkcQs1/d83e.jpeg",
+        "restbType": 1,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBsRXRXaEkcQtf/fce5.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBCBv9BXjEkcQvH/20ed.jpeg",
+        "restbType": 1,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBD7Q0hVEEkcQvn/1670.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBC0ZD7XSEkcQwb/f50f.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoDiQhqXmEkcQw5/993b.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoBEqdwXLEkcQxq/e77b.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoC2bQRXBEkcQyh/5391.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoDiQhqXmEkcQza/60f0.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoC2bQRXlEkcQ0S/c662.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoCMZL9XlEkcQ1E/7104.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoDiQhqXlEkcQ2F/3177.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoCMZL9XmEkcQ20/f678.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoBEqdwXMEkcQ3h/eb5f.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoBSGGoXlEkcQ4q/ff7b.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoDdPdoXyEkcQ5U/bf89.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjB17k9XCEkcQ6U/496e.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBDN2yrX1EkcQ7B/24ce.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBNlDMX1EkcQ7q/1cc8.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoBSGGoV1EkcQ8d/7cdb.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoDdPdoXyEkcQ9B/52b2.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBNlDMXCEkcQ9y/b0e3.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoDdPdoXzEkcRAd/922a.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoCswkNXuEkcRBR/6a38.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBsRXRXkEkcRB6/42e6.jpeg",
+        "restbType": 16,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBBGDkbWnEkcRCj/c6e2.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjB17k9XTEkcRDN/2222.jpeg",
+        "restbType": 11,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBDmHSdXcEkcRDx/0969.jpeg",
+        "restbType": 11,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoDdPdoXzEkcREU/4daf.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoCMZL9XnEkcRE1/5d79.jpeg",
+        "restbType": 11,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBDmHSdXcEkcRFb/1bda.jpeg",
+        "restbType": 30,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoDuFBcXwEkcRF5/3f06.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBNlDMXjEkcRGb/d245.jpeg",
+        "restbType": 26,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoChS4kXuEkcRG4/00d8.jpeg",
+        "restbType": 26,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoCMZL9V0EkcRHW/7f44.jpeg",
+        "restbType": 26,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoDuFBcXwEkcRHx/71a3.jpeg",
+        "restbType": 22,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBNlDMX1EkcRIL/c2b0.jpeg",
+        "restbType": 22,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBDN2yrVDEkcRI1/6b07.jpeg",
+        "restbType": 23,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoCswkNXdEkcRJd/a974.jpeg",
+        "restbType": 23,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoCswkNV0EkcRKJ/8157.jpeg",
+        "restbType": 23,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_B/nO1Ur3YPjBsRXRXJEkcRKm/db93.jpeg",
+        "restbType": 25,
+        "order": null
+      }
+    ],
+    "locality": {
+      "city": "Hostín u Vojkovic",
+      "citySeoName": "hostin-u-vojkovic",
+      "cityPart": "Hostín u Vojkovic",
+      "cityPartSeoName": "hostin-u-vojkovic",
+      "country": "Česká republika",
+      "countryId": 112,
+      "district": "Mělník",
+      "districtId": 54,
+      "districtSeoName": "melnik",
+      "entityType": "address",
+      "geoHash": "u2fnps799y",
+      "houseNumber": "",
+      "inaccuracyType": "gps",
+      "latitude": 50.2970767,
+      "longitude": 14.3969721,
+      "municipality": null,
+      "municipalityId": 3869,
+      "municipalitySeoName": null,
+      "quarter": null,
+      "quarterId": null,
+      "region": "Středočeský kraj",
+      "regionId": 11,
+      "regionSeoName": "stredocesky-kraj",
+      "street": "",
+      "streetId": null,
+      "streetNumber": "",
+      "streetSeoName": null,
+      "ward": null,
+      "wardId": 3098,
+      "wardSeoName": null,
+      "zip": null
+    },
+    "name": "Prodej rodinného domu 200 m², pozemek 2125 m²",
+    "premiseLogo": "https://d48-a.sdn.cz/d_48/c_img_gR_e/EMkBQf.png",
+    "premiseId": 38893,
+    "premise": {
+      "seoName": "alfa-estate",
+      "wardSeoName": "karlovy-vary",
+      "quarterSeoName": "",
+      "citySeoName": "karlovy-vary"
+    },
+    "priceCzk": 14500000,
+    "priceCzkPerSqM": 72500,
+    "priceSummaryCzk": 14500000,
+    "priceSummaryUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "priceUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "watchdogBadge": "none"
+  },
+  {
+    "categoryMainCb": {
+      "name": "Domy",
+      "value": 2
+    },
+    "categorySubCb": {
+      "name": "Zemědělská usedlost",
+      "value": 44
+    },
+    "categoryTypeCb": {
+      "name": "Prodej",
+      "value": 1
+    },
+    "discountShow": false,
+    "id": 2327561036,
+    "hasMatterport": false,
+    "hasVideo": true,
+    "images": [
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nUv1hFtTEjTOeE/78f4.png",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8CDPLmX3EjTLBk/a254.png",
+        "restbType": 26,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nBusAfFyIEjTPRE/c1f3.png",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nBusAfFxsEjTLLo/c0ac.png",
+        "restbType": 26,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nCruJ2FwOEjTM4G/80c1.png",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nCruJ2FwOEjTQpn/3175.png",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8BFAxJUpEjTRAr/620a.png",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8KV2SWJEjTRFq/416b.png",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8BjyTHWIEjTRWf/7cf6.png",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nBaI13FutEjTLye/d3ff.png",
+        "restbType": 23,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8B9O11WHEjTL7f/c832.png",
+        "restbType": 23,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8zSZiX4EjTMCd/bbf7.png",
+        "restbType": 23,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nrwBeEePEjTMRg/434b.png",
+        "restbType": 23,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nBaI13FvBEjTNCq/87f0.png",
+        "restbType": 26,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8BW941UuEjTNJo/a050.png",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8BjyTHWREjTPa8/b4ad.png",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8zSZiXeEjTP6A/b0da.png",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nD0mTJFs3EjTQZ5/3441.png",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nrwBeEePEjTQKe/9ebc.png",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nTCtSEcwEjTR2b/e3b2.png",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nD0izvFu0EjTR6r/b5f4.png",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nClkYSEbnEjTR8l/8cf6.png",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nClkYSEbnEjTSAv/5399.png",
+        "restbType": 0,
+        "order": null
+      }
+    ],
+    "locality": {
+      "city": "Mělník",
+      "citySeoName": "melnik",
+      "cityPart": "Mělník",
+      "cityPartSeoName": "melnik",
+      "country": "Česká republika",
+      "countryId": 112,
+      "district": "Mělník",
+      "districtId": 54,
+      "districtSeoName": "melnik",
+      "entityType": "address",
+      "geoHash": "u2fq9fqect",
+      "houseNumber": "1696",
+      "inaccuracyType": "address",
+      "latitude": 50.37436299440461,
+      "longitude": 14.499966709500548,
+      "municipality": null,
+      "municipalityId": 3859,
+      "municipalitySeoName": null,
+      "quarter": null,
+      "quarterId": null,
+      "region": "Středočeský kraj",
+      "regionId": 11,
+      "regionSeoName": "stredocesky-kraj",
+      "street": "Chloumecká",
+      "streetId": 103929,
+      "streetNumber": "43",
+      "streetSeoName": "chloumecka",
+      "ward": null,
+      "wardId": 13863,
+      "wardSeoName": null,
+      "zip": null
+    },
+    "name": "Prodej zemědělské usedlosti 93 m², pozemek 2624 m²",
+    "premiseLogo": "",
+    "premiseId": 24803,
+    "premise": {
+      "seoName": "centrum-nemovitosti-s-r-o",
+      "wardSeoName": "nove-mesto",
+      "quarterSeoName": "praha-1",
+      "citySeoName": "praha"
+    },
+    "priceCzk": 10800000,
+    "priceCzkPerSqM": 116129,
+    "priceSummaryCzk": 10800000,
+    "priceSummaryUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "priceUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "watchdogBadge": "none"
+  },
+  {
+    "categoryMainCb": {
+      "name": "Domy",
+      "value": 2
+    },
+    "categorySubCb": {
+      "name": "Zemědělská usedlost",
+      "value": 44
+    },
+    "categoryTypeCb": {
+      "name": "Prodej",
+      "value": 1
+    },
+    "discountShow": false,
+    "id": 2950415180,
+    "hasMatterport": false,
+    "hasVideo": false,
+    "images": [
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8BFAxJVFEjQPqe/1616.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8CO44ZW4EjQPrk/f9c3.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nTCtSEc6EjQPs4/6ceb.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nBaI13FtVEjQPuF/91eb.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nD0mTJFtCEjQPvT/0c98.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nBusAfFwlEjQPwR/0037.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nD0izvFt2EjQPxK/3841.jpeg",
+        "restbType": 5,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nCJGajFyVEjQPyc/99ad.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8BOkUvVWEjQPzU/b23b.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nUv1hFuMEjQP0N/e27b.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8BW941UuEjQP1Z/8da7.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nCruJ2FvPEjQP2d/390a.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nClkYSEYzEjQP3b/3b8b.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8CDPLmUrEjQP4k/806c.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8B9O11VgEjQP5p/0aa9.jpeg",
+        "restbType": 27,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nBaI13FroEjQP63/c376.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nCJGajFyuEjQP79/8f3d.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nBaI13FroEjQP9B/dcd4.jpeg",
+        "restbType": 27,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8KV2SVhEjQQAK/c3c2.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nBusAfFwTEjQQBM/753a.jpeg",
+        "restbType": 27,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8BW941VXEjQQCX/bb99.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8zSZiUuEjQQDg/0844.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nUv1hFt5EjQQEl/3f53.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nUv1hFulEjQQFw/931e.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nBusAfFv3EjQQG0/82a7.jpeg",
+        "restbType": 1,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nBusAfFwlEjQQH1/e842.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/kBlLbSfl8BW941VOEjQQJN/8187.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nrwBeEcTEjQQKf/b74d.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nrwBeEc1EjQQLn/4474.jpeg",
+        "restbType": 27,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nUv1hFulEjQQMy/ef99.jpeg",
+        "restbType": 26,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_A/nPSV1TXV2nBusAfFwuEjQQOL/b9d7.jpeg",
+        "restbType": 0,
+        "order": null
+      }
+    ],
+    "locality": {
+      "city": "Chlumín",
+      "citySeoName": "chlumin",
+      "cityPart": "Chlumín",
+      "cityPartSeoName": "chlumin",
+      "country": "Česká republika",
+      "countryId": 112,
+      "district": "Mělník",
+      "districtId": 54,
+      "districtSeoName": "melnik",
+      "entityType": "address",
+      "geoHash": "u2fq0fvje9",
+      "houseNumber": "52",
+      "inaccuracyType": "gps",
+      "latitude": 50.289494,
+      "longitude": 14.454039,
+      "municipality": null,
+      "municipalityId": 3870,
+      "municipalitySeoName": null,
+      "quarter": null,
+      "quarterId": null,
+      "region": "Středočeský kraj",
+      "regionId": 11,
+      "regionSeoName": "stredocesky-kraj",
+      "street": "",
+      "streetId": null,
+      "streetNumber": "",
+      "streetSeoName": null,
+      "ward": null,
+      "wardId": 3519,
+      "wardSeoName": null,
+      "zip": null
+    },
+    "name": "Prodej zemědělské usedlosti 740 m², pozemek 12480 m²",
+    "premiseLogo": "",
+    "premiseId": 32791,
+    "premise": {
+      "seoName": "remax-g8-reality",
+      "wardSeoName": "kladno",
+      "quarterSeoName": "",
+      "citySeoName": "kladno"
+    },
+    "priceCzk": 26000000,
+    "priceCzkPerSqM": 35135,
+    "priceSummaryCzk": 26000000,
+    "priceSummaryUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "priceUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "watchdogBadge": "none"
+  },
+  {
+    "categoryMainCb": {
+      "name": "Domy",
+      "value": 2
+    },
+    "categorySubCb": {
+      "name": "Vila",
+      "value": 39
+    },
+    "categoryTypeCb": {
+      "name": "Prodej",
+      "value": 1
+    },
+    "discountShow": false,
+    "id": 1671512652,
+    "hasMatterport": true,
+    "hasVideo": false,
+    "images": [
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/kPxAuWMbDHCgJCaBW2DkdojI/60e9.jpeg",
+        "restbType": 5,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/kPxAuWMbDHCqtaXBTCDkdoji/e238.jpeg",
+        "restbType": 8,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_D/kPxAuWMbDHDRREJBWGDkdoj4/1c3a.jpeg",
+        "restbType": 3,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/kPxAuWMbDHCgJCaBXKDkdokU/cc8c.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/kPxAuWMbDHCqtaXBStDkdolC/a89e.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/kPxAuWMbDHCgJCaBXKDkdolb/fedc.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_D/kPxAuWMbDHNOfYBVVDkdoly/7731.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/nO7kYQIzllCpKXPCuWDkdomQ/af1a.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_D/kPxAuWMbDHBCbQyBSVDkdomq/583d.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/kPxAuWMbDHCL8cmBVWDkdonC/e527.jpeg",
+        "restbType": 22,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/nO7kYQIzllCHfwdCwZDkdonY/b8a4.jpeg",
+        "restbType": 22,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/nO7kYQIzllEEv2CCwXDkdon4/6a9d.jpeg",
+        "restbType": 22,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_D/kPxAuWMbDHBP5fVBUqDkdooP/577c.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/kPxAuWMbDHCgJCaBW2Dkdoox/f037.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/kPxAuWMbDHCgJCaBXBDkdopJ/c059.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_D/kPxAuWMbDHBP5fVBUqDkdopl/e48d.jpeg",
+        "restbType": 3,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_D/kPxAuWMbDHDRREJBV7Dkdop9/15a3.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/nO7kYQIzllCHfwdCv1DkdoqX/d81f.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_D/kPxAuWMbDHNOfYBVgDkdoqw/f703.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_D/kPxAuWMbDHBP5fVBU0DkdorK/1ccd.jpeg",
+        "restbType": 3,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/nO7kYQIzllzLYfCwsDkdori/8ec1.jpeg",
+        "restbType": 5,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_D/kPxAuWMbDHNOfYBVhDkdor2/52e7.jpeg",
+        "restbType": 10,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/nO7kYQIzllB8BgJCtZDkdosO/d9dd.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/nO7kYQIzllBYfIFCxBDkdosi/ac30.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_D/kPxAuWMbDHBCbQyBSVDkdos3/06fe.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_D/kPxAuWMbDHBCbQyBSTDkdotV/37f4.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/nO7kYQIzllzLYfCxADkdotr/1b94.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/kPxAuWMbDHCqtaXBS3DkdouA/fbcd.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_D/kPxAuWMbDHDRgpQBSbDkdouW/6353.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oa_E/kPxAuWMbDHC2NaaBYdDkdouv/7d40.jpeg",
+        "restbType": 29,
+        "order": null
+      }
+    ],
+    "locality": {
+      "city": "Želízy",
+      "citySeoName": "zelizy",
+      "cityPart": "Želízy",
+      "cityPartSeoName": "zelizy",
+      "country": "Česká republika",
+      "countryId": 112,
+      "district": "Mělník",
+      "districtId": 54,
+      "districtSeoName": "melnik",
+      "entityType": "address",
+      "geoHash": "u2fqc72y9x",
+      "houseNumber": "69",
+      "inaccuracyType": "gps",
+      "latitude": 50.4242823,
+      "longitude": 14.470091,
+      "municipality": null,
+      "municipalityId": 3918,
+      "municipalitySeoName": null,
+      "quarter": null,
+      "quarterId": null,
+      "region": "Středočeský kraj",
+      "regionId": 11,
+      "regionSeoName": "stredocesky-kraj",
+      "street": "",
+      "streetId": null,
+      "streetNumber": "",
+      "streetSeoName": null,
+      "ward": null,
+      "wardId": 13387,
+      "wardSeoName": null,
+      "zip": null
+    },
+    "name": "Prodej vily 286 m², pozemek 3176 m²",
+    "premiseLogo": "",
+    "premiseId": 11541,
+    "premise": {
+      "seoName": "dumrealit-cz-clever",
+      "wardSeoName": "roudnice-nad-labem",
+      "quarterSeoName": "",
+      "citySeoName": "roudnice-nad-labem"
+    },
+    "priceCzk": 14990000,
+    "priceCzkPerSqM": 52413,
+    "priceSummaryCzk": 14990000,
+    "priceSummaryUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "priceUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "watchdogBadge": "none"
+  },
+  {
+    "categoryMainCb": {
+      "name": "Domy",
+      "value": 2
+    },
+    "categorySubCb": {
+      "name": "Rodinný",
+      "value": 37
+    },
+    "categoryTypeCb": {
+      "name": "Prodej",
+      "value": 1
+    },
+    "discountShow": false,
+    "id": 3248415564,
+    "hasMatterport": false,
+    "hasVideo": true,
+    "images": [
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlTJ3VBxvE3vWtP/9134.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlBaYpXBs4E3vWuG/dd23.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlC6aNACSKE3vWu5/ff03.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlBWHnvCX1E3vWvq/f15d.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlCIYXkBwfE3vWwb/f619.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlCIYXkBwfE3vWxN/bd33.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlDrUk0CVcE3vWx7/e6bf.jpeg",
+        "restbType": 5,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlCon8iBs6E3vWyq/50a8.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlDgbxFCW6E3vWzX/917c.jpeg",
+        "restbType": 1,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlC0jCJBqSE3vW0G/94d7.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlC2Y2ECVrE3vW0z/2243.jpeg",
+        "restbType": 32,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlD9vAdBxNE3vW1j/43fb.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlC2Y2ECVZE3vW2a/91e8.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlBY4BlCTHE3vW3I/4d4d.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlDgbxFCW5E3vW34/1f8f.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlC6aNACSbE3vW4m/3563.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlBaYpXBs5E3vW6F/e36f.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlBWHnvCX1E3vW63/7d50.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlC2Y2ECViE3vW7t/3449.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlCon8iBs6E3vW8a/567e.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlBWHnvCXgE3vW9Q/b856.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlB2dleCTSE3vW99/7529.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlC2Y2ECV1E3vXAw/8ee2.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlDgPvvCUxE3vXBd/ea86.jpeg",
+        "restbType": 26,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlC0jCJBqSE3vXCK/5d94.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlCIYXkBwNE3vXC2/7b17.jpeg",
+        "restbType": 8,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlC6aNACSbE3vXDn/9e2e.jpeg",
+        "restbType": 14,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlC6aNACR1E3vXEi/5210.jpeg",
+        "restbType": 0,
+        "order": null
+      }
+    ],
+    "locality": {
+      "city": "Kokořín",
+      "citySeoName": "kokorin",
+      "cityPart": "Janova Ves",
+      "cityPartSeoName": "janova-ves",
+      "country": "Česká republika",
+      "countryId": 112,
+      "district": "Mělník",
+      "districtId": 54,
+      "districtSeoName": "melnik",
+      "entityType": "ward",
+      "geoHash": "u2fqg730hk",
+      "houseNumber": null,
+      "inaccuracyType": "ward",
+      "latitude": 50.423148641045,
+      "longitude": 14.5584446984816,
+      "municipality": null,
+      "municipalityId": 3876,
+      "municipalitySeoName": null,
+      "quarter": null,
+      "quarterId": null,
+      "region": "Středočeský kraj",
+      "regionId": 11,
+      "regionSeoName": "stredocesky-kraj",
+      "street": "",
+      "streetId": null,
+      "streetNumber": null,
+      "streetSeoName": null,
+      "ward": null,
+      "wardId": 4626,
+      "wardSeoName": null,
+      "zip": null
+    },
+    "name": "Prodej rodinného domu 250 m², pozemek 1060 m²",
+    "premiseLogo": "",
+    "premiseId": 1019,
+    "premise": {
+      "seoName": "mm-reality",
+      "wardSeoName": "nove-mesto",
+      "quarterSeoName": "praha-1",
+      "citySeoName": "praha"
+    },
+    "priceCzk": 12692000,
+    "priceCzkPerSqM": 50768,
+    "priceSummaryCzk": 12692000,
+    "priceSummaryUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "priceUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "watchdogBadge": "none"
+  },
+  {
+    "categoryMainCb": {
+      "name": "Domy",
+      "value": 2
+    },
+    "categorySubCb": {
+      "name": "Rodinný",
+      "value": 37
+    },
+    "categoryTypeCb": {
+      "name": "Prodej",
+      "value": 1
+    },
+    "discountShow": false,
+    "id": 1001509452,
+    "hasMatterport": false,
+    "hasVideo": true,
+    "images": [
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYCL2HI8yEzNBWN/58a0.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYBMLzc8MEzNBXd/0915.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYBMLzc8PEzNBY9/7a8c.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGBGYXtBBVEzNBZ3/c9c9.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYC238l8OEzNBat/cbb8.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGXuqX5YEzNBbs/b278.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYDxpu48IEzNBcp/c11c.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYC238l8OEzNBdo/548e.jpeg",
+        "restbType": 5,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYBKAre9OEzNBha/94a9.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYCbv7JBCYEzNBiQ/ddc4.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYCbv7JBCYEzNBjF/f140.jpeg",
+        "restbType": 3,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGEEwhJ5sEzNBj6/48d6.jpeg",
+        "restbType": 3,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGB5Rk140EzNBk3/6470.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGsrZ64qEzNBl0/624b.jpeg",
+        "restbType": 1,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGsrZ65PEzNBmq/192c.jpeg",
+        "restbType": 1,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYDxpu48KEzNBnf/512d.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGBGYXtBBVEzNBoX/5a5b.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGDgBjy5YEzNBpM/1496.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGEEwhJ5QEzNBqD/90c6.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYDxpu48JEzNBq3/d224.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGXuqX5FEzNBrz/59d3.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGDgBjy5GEzNBsu/359b.jpeg",
+        "restbType": 8,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGB6Hk38HEzNBtn/0a8d.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGXuqX5YEzNBue/4b7c.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYCbv7JBCYEzNBvW/9536.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYMDdi7kEzNBwL/7e48.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGmo7f6zEzNBw8/c757.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGBGYXtBAwEzNBxv/2fb5.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYMDdi7lEzNBym/c654.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYD289D87EzNBzf/4f50.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYCKML07IEzNB0T/d471.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYMDdi7mEzNB1L/943f.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGB5Rk140EzNB19/411a.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYDxpu48KEzNB22/d19e.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGEEwhJ5aEzNB3r/7119.jpeg",
+        "restbType": 10,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGDsCtN5pEzNB4i/a475.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGB6Hk378EzNB5i/95a0.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYCKML06qEzNB7C/8114.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYCKML06qEzNB8R/3525.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYD289D8wEzNB9p/ddef.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYCL2HI8zEzNCBD/4869.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYD289D87EzNCCk/0b56.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYMDdi7aEzNCD8/5760.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYC238l8NEzNCFr/1e83.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGB6Hk377EzNCHA/9c21.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYDxpu479EzNCIP/e951.jpeg",
+        "restbType": 29,
+        "order": null
+      }
+    ],
+    "locality": {
+      "city": "Liběchov",
+      "citySeoName": "libechov",
+      "cityPart": "Liběchov",
+      "cityPartSeoName": "libechov",
+      "country": "Česká republika",
+      "countryId": 112,
+      "district": "Mělník",
+      "districtId": 54,
+      "districtSeoName": "melnik",
+      "entityType": "address",
+      "geoHash": "u2fqbcp3rd",
+      "houseNumber": "80",
+      "inaccuracyType": "gps",
+      "latitude": 50.410996,
+      "longitude": 14.457303,
+      "municipality": null,
+      "municipalityId": 3881,
+      "municipalitySeoName": null,
+      "quarter": null,
+      "quarterId": null,
+      "region": "Středočeský kraj",
+      "regionId": 11,
+      "regionSeoName": "stredocesky-kraj",
+      "street": "Rumburská",
+      "streetId": 103821,
+      "streetNumber": "",
+      "streetSeoName": "rumburska",
+      "ward": null,
+      "wardId": 5684,
+      "wardSeoName": null,
+      "zip": null
+    },
+    "name": "Prodej rodinného domu 960 m², pozemek 4964 m²",
+    "premiseLogo": "",
+    "premiseId": 17991,
+    "premise": {
+      "seoName": "remax-4-you-ii",
+      "wardSeoName": "krc",
+      "quarterSeoName": "praha-4",
+      "citySeoName": "praha"
+    },
+    "priceCzk": 20800000,
+    "priceCzkPerSqM": 21667,
+    "priceSummaryCzk": 20800000,
+    "priceSummaryUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "priceUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "watchdogBadge": "none"
+  },
+  {
+    "categoryMainCb": {
+      "name": "Domy",
+      "value": 2
+    },
+    "categorySubCb": {
+      "name": "Rodinný",
+      "value": 37
+    },
+    "categoryTypeCb": {
+      "name": "Prodej",
+      "value": 1
+    },
+    "discountShow": false,
+    "id": 2270896972,
+    "hasMatterport": false,
+    "hasVideo": false,
+    "images": [
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlCIYXkBxcE3zIVx/42dd.jpeg",
+        "restbType": 20,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlCIYXkBxcE3zIWU/9623.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlQSx2BygE3zIWy/2d13.jpeg",
+        "restbType": 2,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlC2Y2ECXTE3zIXa/4aba.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlEAMYFCaVE3zIYB/6c83.jpeg",
+        "restbType": 22,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlBaYpXBuHE3zIYg/bc52.jpeg",
+        "restbType": 2,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlCHwceBuFE3zIY4/e90b.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlB2dleCVQE3zIZZ/8cb2.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlDgbxFCZeE3zIZv/30b6.jpeg",
+        "restbType": 2,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlCIYXkBxlE3zIaa/1601.jpeg",
+        "restbType": 2,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlCAK9gCbcE3zIa7/983c.jpeg",
+        "restbType": 5,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlC6aNACUbE3zIbc/e25e.jpeg",
+        "restbType": 1,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlCAK9gCbvE3zIcD/a1cb.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlC6aNACUbE3zIcb/6945.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlD9vAdByKE3zIdI/a851.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlCAK9gCbvE3zIdo/a918.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlCon8iBukE3zIeI/52d8.jpeg",
+        "restbType": 29,
+        "order": null
+      }
+    ],
+    "locality": {
+      "city": "Mělník",
+      "citySeoName": "melnik",
+      "cityPart": "Mělník",
+      "cityPartSeoName": "melnik",
+      "country": "Česká republika",
+      "countryId": 112,
+      "district": "Mělník",
+      "districtId": 54,
+      "districtSeoName": "melnik",
+      "entityType": "address",
+      "geoHash": "u2fq6h0t6s",
+      "houseNumber": null,
+      "inaccuracyType": "street",
+      "latitude": 50.3402808300753,
+      "longitude": 14.5027557574304,
+      "municipality": null,
+      "municipalityId": 3859,
+      "municipalitySeoName": null,
+      "quarter": null,
+      "quarterId": null,
+      "region": "Středočeský kraj",
+      "regionId": 11,
+      "regionSeoName": "stredocesky-kraj",
+      "street": "Luční",
+      "streetId": 150122,
+      "streetNumber": null,
+      "streetSeoName": "lucni",
+      "ward": null,
+      "wardId": 13863,
+      "wardSeoName": null,
+      "zip": null
+    },
+    "name": "Prodej rodinného domu 186 m², pozemek 813 m²",
+    "premiseLogo": "https://d48-a.sdn.cz/d_48/c_img_QO_o/6qDFi8.png",
+    "premiseId": 20819,
+    "premise": {
+      "seoName": "city-estates-vase-realitni-kancelar",
+      "wardSeoName": "nove-mesto",
+      "quarterSeoName": "praha-2",
+      "citySeoName": "praha"
+    },
+    "priceCzk": 13990000,
+    "priceCzkPerSqM": 75215,
+    "priceSummaryCzk": 13990000,
+    "priceSummaryUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "priceUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "watchdogBadge": "none"
+  },
+  {
+    "categoryMainCb": {
+      "name": "Domy",
+      "value": 2
+    },
+    "categorySubCb": {
+      "name": "Vila",
+      "value": 39
+    },
+    "categoryTypeCb": {
+      "name": "Prodej",
+      "value": 1
+    },
+    "discountShow": false,
+    "id": 1253167692,
+    "hasMatterport": false,
+    "hasVideo": true,
+    "images": [
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGEEwhJcVEzM18G/f6fb.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYDt8BfdjEzM19m/e26c.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYCbv7JeHEzM2Au/9524.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGBGYXtBBMEzM2Bs/cd41.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYBKAre9YEzM2Cs/d22c.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGB6Hk378EzM2Dh/1b90.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYMDdi7lEzM2Ed/6d93.jpeg",
+        "restbType": 5,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYDxpu47qEzM2FV/aad7.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYCbv7J4qEzM2GM/0f21.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGEEwhJceEzM2HB/ad1b.jpeg",
+        "restbType": 3,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYDxpu470EzM2H0/06f0.jpeg",
+        "restbType": 3,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGDsCtNn3EzM2I0/05f4.jpeg",
+        "restbType": 1,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGB6Hk3cPEzM2Jw/face.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGDsCtN6EEzM2Kq/6e82.jpeg",
+        "restbType": 1,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYD289D8xEzM2Lh/81a2.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGXuqX5GEzM2Mk/d4bf.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYCKML07IEzM2Na/4243.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGsrZ64qEzM2Or/1f04.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGEEwhJyxEzM2Pn/265a.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGEEwhJ5QEzM2Qm/ebe3.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYMDdi7kEzM2Rg/7fa0.jpeg",
+        "restbType": 8,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYCbv7JeHEzM2SZ/6ca3.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYCKML060EzM2TV/19c7.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYDt8Bf8tEzM2Ut/473a.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGB6Hk377EzM2Vn/b1c5.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGB6Hk38HEzM2W9/d8d9.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGDgBjy5GEzM2Xy/ff87.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYDxpu4d4EzM2Y2/b3bf.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGXuqX5PEzM2Z1/18a7.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYDxpu4dvEzM2a1/0e5d.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGDgBjyuBEzM2by/067f.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGDsCtNcKEzM2cs/d7ef.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGEEwhJ5ZEzM2dj/8149.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYC238l73EzM2ec/992b.jpeg",
+        "restbType": 10,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGB5Rk15AEzM2fZ/cf21.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYCKML069EzM2hC/3e03.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGB5Rk141EzM2iV/4867.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGB6Hk38HEzM2jn/5061.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGB5Rk141EzM2k2/67cb.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYCL2HI8WEzM2mP/5ead.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGDsCtN6EEzM2nl/3f03.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYDt8Bfc9EzM2ph/d313.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYDt8Bf8kEzM2qx/7c9b.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYCbv7JeGEzM2sm/11bd.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGBGYXtBBMEzM2uE/a252.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYDt8Bf8uEzM2vb/3f59.jpeg",
+        "restbType": 29,
+        "order": null
+      }
+    ],
+    "locality": {
+      "city": "Liběchov",
+      "citySeoName": "libechov",
+      "cityPart": "Liběchov",
+      "cityPartSeoName": "libechov",
+      "country": "Česká republika",
+      "countryId": 112,
+      "district": "Mělník",
+      "districtId": 54,
+      "districtSeoName": "melnik",
+      "entityType": "address",
+      "geoHash": "u2fqbcp3rd",
+      "houseNumber": "80",
+      "inaccuracyType": "gps",
+      "latitude": 50.410996,
+      "longitude": 14.457303,
+      "municipality": null,
+      "municipalityId": 3881,
+      "municipalitySeoName": null,
+      "quarter": null,
+      "quarterId": null,
+      "region": "Středočeský kraj",
+      "regionId": 11,
+      "regionSeoName": "stredocesky-kraj",
+      "street": "Rumburská",
+      "streetId": 103821,
+      "streetNumber": "",
+      "streetSeoName": "rumburska",
+      "ward": null,
+      "wardId": 5684,
+      "wardSeoName": null,
+      "zip": null
+    },
+    "name": "Prodej vily 960 m², pozemek 4964 m²",
+    "premiseLogo": "",
+    "premiseId": 17991,
+    "premise": {
+      "seoName": "remax-4-you-ii",
+      "wardSeoName": "krc",
+      "quarterSeoName": "praha-4",
+      "citySeoName": "praha"
+    },
+    "priceCzk": 20800000,
+    "priceCzkPerSqM": 21667,
+    "priceSummaryCzk": 20800000,
+    "priceSummaryUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "priceUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "watchdogBadge": "none"
+  },
+  {
+    "categoryMainCb": {
+      "name": "Domy",
+      "value": 2
+    },
+    "categorySubCb": {
+      "name": "Rodinný",
+      "value": 37
+    },
+    "categoryTypeCb": {
+      "name": "Prodej",
+      "value": 1
+    },
+    "discountShow": false,
+    "id": 3100877644,
+    "hasMatterport": true,
+    "hasVideo": false,
+    "images": [
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/nPvP7Dwxi2B1K44TZDpm6r3/8bd6.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHBCbQy11Dpm6sX/3670.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHC2Naa3EDpm6s0/e77e.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/nPvP7Dwxi2CbiToTYDpm6tO/0fbf.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHCL8cmDEgDpm6ts/e4d3.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHBCbQy22Dpm6uF/45b1.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/nPvP7Dwxi2CnKLHTZDpm6ui/69aa.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/nPvP7Dwxi2bOLCTYDpm6u1/5f4b.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHC2Naa34Dpm6vR/d1a9.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHCgJCa1pDpm6vt/13eb.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHCqtaX7uDpm6wK/30a8.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHDsbvN2rDpm6wg/dd95.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHCgJCa1gDpm6w9/98b8.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/nPvP7Dwxi2b8GuTVDpm6xX/ad3b.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHC2Naa4DDpm6xw/15c3.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/nPvP7Dwxi2txZrTYDpm6yG/2b94.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHCqtaX8lDpm6yh/cd6e.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHBP5fV5aDpm6y4/0fac.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/nPvP7Dwxi2B1K44TYDpm6zg/4c16.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/nPvP7Dwxi2paOqTSDpm6z9/079e.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/nPvP7Dwxi2DkwxOTZDpm60d/61d9.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHCgJCa1yDpm61M/a6c6.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHCL8cmDEFDpm62P/675b.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHDsbvN2sDpm62s/9a41.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/nPvP7Dwxi2txZrTZDpm64F/39a9.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHCL8cmDEXDpm64h/0c53.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHCL8cmDEgDpm649/b3ff.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHBP5fV5IDpm66D/5d5c.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHNOfY3pDpm668/4b4c.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/nPvP7Dwxi2xj6MTWDpm67b/f99e.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHCqtaX74Dpm68s/e402.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/nPvP7Dwxi2DkwxOTYDpm69N/c605.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/nPvP7Dwxi2b8GuTUDpm69i/baca.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHCL8cmDEODpm7FH/7f80.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHCqtaX74Dpm7Fg/e989.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHNOfY3QDpm7F9/d5bf.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHDRREJ5JDpm7GX/8e29.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/kPxAuWMbDHCL8cmDEXDpm7Gw/70e7.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_ob_A/nPvP7Dwxi2CnKLHTYDpm7HL/5f44.jpeg",
+        "restbType": 4,
+        "order": null
+      }
+    ],
+    "locality": {
+      "city": "Obříství",
+      "citySeoName": "obristvi",
+      "cityPart": "Obříství",
+      "cityPartSeoName": "obristvi",
+      "country": "Česká republika",
+      "countryId": 112,
+      "district": "Mělník",
+      "districtId": 54,
+      "districtSeoName": "melnik",
+      "entityType": "address",
+      "geoHash": "u2fq17ep0u",
+      "houseNumber": "301",
+      "inaccuracyType": "address",
+      "latitude": 50.293889068664,
+      "longitude": 14.4731477267798,
+      "municipality": null,
+      "municipalityId": 3896,
+      "municipalitySeoName": null,
+      "quarter": null,
+      "quarterId": null,
+      "region": "Středočeský kraj",
+      "regionId": 11,
+      "regionSeoName": "stredocesky-kraj",
+      "street": "Povodňová",
+      "streetId": 5183071,
+      "streetNumber": "",
+      "streetSeoName": "povodnova",
+      "ward": null,
+      "wardId": 7629,
+      "wardSeoName": null,
+      "zip": null
+    },
+    "name": "Prodej rodinného domu 150 m², pozemek 820 m²",
+    "premiseLogo": "https://d48-a.sdn.cz/d_48/c_img_H_D/KXgBKah.png",
+    "premiseId": 9013,
+    "premise": {
+      "seoName": "molik-reality",
+      "wardSeoName": "most",
+      "quarterSeoName": "",
+      "citySeoName": "most"
+    },
+    "priceCzk": 12999000,
+    "priceCzkPerSqM": 86660,
+    "priceSummaryCzk": 12999000,
+    "priceSummaryUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "priceUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "watchdogBadge": "none"
+  },
+  {
+    "categoryMainCb": {
+      "name": "Domy",
+      "value": 2
+    },
+    "categorySubCb": {
+      "name": "Rodinný",
+      "value": 37
+    },
+    "categoryTypeCb": {
+      "name": "Prodej",
+      "value": 1
+    },
+    "discountShow": false,
+    "id": 2521694796,
+    "hasMatterport": false,
+    "hasVideo": false,
+    "images": [
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/kPWmeC9soBBVL2DkrCjzhpQ/f84e.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/kPWmeC9soB1GgaopCjzhqP/b1ff.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/kPWmeC9soBBWXCzlCCjzhzS/d8bf.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/kPWmeC9soB1GgaosCjzh8c/7253.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/kPWmeC9soBBWXCzlCCjziA2/c691.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/nOzqs9nZOdBXMR3kpCjziDI/14e1.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/nOzqs9nZOdC1m45llCjziEP/4cb2.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/kPWmeC9soBBWXCzlDCjziG2/c6a4.jpeg",
+        "restbType": 3,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/kPWmeC9soBCihh3j2CjziIx/2e28.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/nOzqs9nZOdD1A3zhSCjziMk/6f06.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/kPWmeC9soBDmlC1obCjziO3/a42c.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/kPWmeC9soBBVL2DkkCjziVx/1367.jpeg",
+        "restbType": 5,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/kPWmeC9soBBKrRCfZCjziZV/dfbc.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/nOzqs9nZOdC1m45lcCjziat/0b7f.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/nOzqs9nZOdBXMR3kmCjzibp/52c7.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/nOzqs9nZOdBr9sZhTCjzick/eb86.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/kPWmeC9soBB5dBZlICjzido/551b.jpeg",
+        "restbType": 3,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/kPWmeC9soBCihh3j5Cjzifr/10c8.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/nOzqs9nZOdBXMR3knCjzivy/94be.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/kPWmeC9soBBKrRCfVCjziw9/dbad.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/kPWmeC9soBBWXCzk9Cjzi0U/d29e.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/nOzqs9nZOdBXMR3kqCjzi3N/be19.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/nOzqs9nZOdDdshAg5Cjzi8E/1fe5.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/nOzqs9nZOdI9ozqGCjzjBw/4c8e.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/nOzqs9nZOdDoRMekZCjzjDh/e0f5.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/kPWmeC9soBBaJRtoqCjzjFo/d558.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/nOzqs9nZOdBr9sZhUCjzjHQ/f830.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/kPWmeC9soBCPjYHZWCjzjOc/3520.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/kPWmeC9soBBWXCzlDCjzjZa/da91.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oX_B/nOzqs9nZOdI9ozqGCjzjmN/92a4.jpeg",
+        "restbType": 0,
+        "order": null
+      }
+    ],
+    "locality": {
+      "city": "Mělník",
+      "citySeoName": "melnik",
+      "cityPart": "Mělník",
+      "cityPartSeoName": "melnik",
+      "country": "Česká republika",
+      "countryId": 112,
+      "district": "Mělník",
+      "districtId": 54,
+      "districtSeoName": "melnik",
+      "entityType": "address",
+      "geoHash": "u2fq3qf8nz",
+      "houseNumber": "2578",
+      "inaccuracyType": "address",
+      "latitude": 50.3544994946131,
+      "longitude": 14.4727247937026,
+      "municipality": null,
+      "municipalityId": 3859,
+      "municipalitySeoName": null,
+      "quarter": null,
+      "quarterId": null,
+      "region": "Středočeský kraj",
+      "regionId": 11,
+      "regionSeoName": "stredocesky-kraj",
+      "street": "Fügnerova",
+      "streetId": 103950,
+      "streetNumber": "",
+      "streetSeoName": "fugnerova",
+      "ward": null,
+      "wardId": 13863,
+      "wardSeoName": null,
+      "zip": null
+    },
+    "name": "Prodej rodinného domu 120 m², pozemek 960 m²",
+    "premiseLogo": "https://d48-a.sdn.cz/d_48/c_img_gT_3/s05Dpl.png",
+    "premiseId": 17843,
+    "premise": {
+      "seoName": "bidli-reality",
+      "wardSeoName": "nove-mesto",
+      "quarterSeoName": "praha-1",
+      "citySeoName": "praha"
+    },
+    "priceCzk": 12499000,
+    "priceCzkPerSqM": 104158,
+    "priceSummaryCzk": 12499000,
+    "priceSummaryUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "priceUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "watchdogBadge": "none"
+  },
+  {
+    "categoryMainCb": {
+      "name": "Domy",
+      "value": 2
+    },
+    "categorySubCb": {
+      "name": "Rodinný",
+      "value": 37
+    },
+    "categoryTypeCb": {
+      "name": "Prodej",
+      "value": 1
+    },
+    "discountShow": false,
+    "id": 2589917772,
+    "hasMatterport": false,
+    "hasVideo": false,
+    "images": [
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBKkMNWzCeF3Rg/3294.jpeg",
+        "restbType": 28,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBBVL2DZGCeF3Sr/17c1.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/nOzqs9nZOdI9ozWxCeF3Tr/5662.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/nOzqs9nZOdD1A3zVlCeF3Uf/1c5e.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBBaJRtZ7CeF3W3/bea5.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBDLwnhX8CeF3YV/65be.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBDLwnhX8CeF3ZP/b6ff.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/nOzqs9nZOdD1A3zVpCeF3af/1f5b.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBBWXCzXzCeF3bi/84f1.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBBVL2DZGCeF3cT/66a3.jpeg",
+        "restbType": 2,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBCihh3W1CeF3dE/4618.jpeg",
+        "restbType": 4,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/nOzqs9nZOdC1m45VpCeF3d9/0474.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBCihh3W0CeF3fS/7f38.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/nOzqs9nZOdwXr3VnCeF3gy/0629.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBB5dBZZgCeF3iQ/20c7.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBDmlC1WxCeF3ju/1e06.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBDLwnhX4CeF3lx/a0f7.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBBWXCzX1CeF3mo/c321.jpeg",
+        "restbType": 8,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/nOzqs9nZOdDdshAVoCeF3ng/0ce3.jpeg",
+        "restbType": 8,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/nOzqs9nZOdDqrDkVoCeF3oc/5bff.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBKkMNWyCeF3rU/7df4.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/nOzqs9nZOdD1A3zVnCeF3sS/4b51.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/nOzqs9nZOdDdshAVoCeF3t8/0063.jpeg",
+        "restbType": 17,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBCihh3W1CeF3vZ/8b58.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/nOzqs9nZOdD1A3zVnCeF3wd/4e5a.jpeg",
+        "restbType": 17,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/nOzqs9nZOdDoRMeVqCeF3xT/91d2.jpeg",
+        "restbType": 17,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBCfUPTW0CeF30a/9ec0.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/nOzqs9nZOdBr9sZVpCeF31M/792a.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBCihh3W1CeF35W/0461.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oW_D/kPWmeC9soBCfUPTW0CeF36j/9a44.jpeg",
+        "restbType": 0,
+        "order": null
+      }
+    ],
+    "locality": {
+      "city": "Mělník",
+      "citySeoName": "melnik",
+      "cityPart": "Mělník",
+      "cityPartSeoName": "melnik",
+      "country": "Česká republika",
+      "countryId": 112,
+      "district": "Mělník",
+      "districtId": 54,
+      "districtSeoName": "melnik",
+      "entityType": "address",
+      "geoHash": "u2fq3qhgkn",
+      "houseNumber": "135",
+      "inaccuracyType": "address",
+      "latitude": 50.350933920808,
+      "longitude": 14.4756927025563,
+      "municipality": null,
+      "municipalityId": 3859,
+      "municipalitySeoName": null,
+      "quarter": null,
+      "quarterId": null,
+      "region": "Středočeský kraj",
+      "regionId": 11,
+      "regionSeoName": "stredocesky-kraj",
+      "street": "Palackého",
+      "streetId": 104040,
+      "streetNumber": "7",
+      "streetSeoName": "palackeho",
+      "ward": null,
+      "wardId": 13863,
+      "wardSeoName": null,
+      "zip": null
+    },
+    "name": "Prodej rodinného domu 390 m², pozemek 975 m²",
+    "premiseLogo": "https://d48-a.sdn.cz/d_48/c_img_gT_3/s05Dpl.png",
+    "premiseId": 17843,
+    "premise": {
+      "seoName": "bidli-reality",
+      "wardSeoName": "nove-mesto",
+      "quarterSeoName": "praha-1",
+      "citySeoName": "praha"
+    },
+    "priceCzk": 30000000,
+    "priceCzkPerSqM": 76923,
+    "priceSummaryCzk": 30000000,
+    "priceSummaryUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "priceUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "watchdogBadge": "none"
+  },
+  {
+    "categoryMainCb": {
+      "name": "Domy",
+      "value": 2
+    },
+    "categorySubCb": {
+      "name": "Rodinný",
+      "value": 37
+    },
+    "categoryTypeCb": {
+      "name": "Prodej",
+      "value": 1
+    },
+    "discountShow": false,
+    "id": 1529811532,
+    "hasMatterport": false,
+    "hasVideo": false,
+    "images": [
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBNaf8D3WErmZO4/4694.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoC2bQRDCvErmZQM/8474.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoBSGGoC9YErmZRW/5aaa.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoBSGGoC8pErmZSk/dc30.jpeg",
+        "restbType": 29,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoChS4kDCkErmZTk/e68b.jpeg",
+        "restbType": 22,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBNlDMD33ErmZUr/98fd.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoKFXECFlErmZVx/de13.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBD7Q0hD1YErmZXD/1ec6.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoChS4kDCgErmZYJ/f4af.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBDN2yrD0UErmZZX/9e0f.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoDiQhqDGSErmZaZ/19b2.jpeg",
+        "restbType": 8,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBNaf8D2cErmZbj/e754.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoQAuLC90ErmZct/8782.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoChS4kC8aErmZd9/fc72.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoBSGGoC9YErmZe6/1dbc.jpeg",
+        "restbType": 22,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoBuCN3CBzErmZgL/4e0c.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBCBv9BD3QErmZhb/161e.jpeg",
+        "restbType": 6,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBsRXRD43ErmZim/8956.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoDiQhqDGSErmZjx/1421.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoChS4kDBtErmZk6/847d.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoDdPdoDEDErmZmB/f1fa.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoDuFBcDAUErmZnP/02d6.jpeg",
+        "restbType": 15,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoC2bQRDCvErmZoT/d10e.jpeg",
+        "restbType": 10,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoQAuLDBsErmZpU/fc50.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBNlDMD42ErmZqj/fbb7.jpeg",
+        "restbType": 0,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoBSGGoC9YErmZr3/2e6c.jpeg",
+        "restbType": 19,
+        "order": null
+      },
+      {
+        "url": "//d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoC2bQRDBYErmZtI/e2de.jpeg",
+        "restbType": 29,
+        "order": null
+      }
+    ],
+    "locality": {
+      "city": "Tuhaň",
+      "citySeoName": "tuhan",
+      "cityPart": "Tuhaň",
+      "cityPartSeoName": "tuhan",
+      "country": "Česká republika",
+      "countryId": 112,
+      "district": "Mělník",
+      "districtId": 54,
+      "districtSeoName": "melnik",
+      "entityType": "address",
+      "geoHash": "u2fq4u23tz",
+      "houseNumber": "366",
+      "inaccuracyType": "gps",
+      "latitude": 50.297082,
+      "longitude": 14.535507,
+      "municipality": null,
+      "municipalityId": 3903,
+      "municipalitySeoName": null,
+      "quarter": null,
+      "quarterId": null,
+      "region": "Středočeský kraj",
+      "regionId": 11,
+      "regionSeoName": "stredocesky-kraj",
+      "street": "",
+      "streetId": null,
+      "streetNumber": "",
+      "streetSeoName": null,
+      "ward": null,
+      "wardId": 11530,
+      "wardSeoName": null,
+      "zip": null
+    },
+    "name": "Prodej rodinného domu 108 m², pozemek 1256 m²",
+    "premiseLogo": "https://d48-a.sdn.cz/d_48/c_img_QJ_v/yhABYde.png",
+    "premiseId": 1357,
+    "premise": {
+      "seoName": "remax-diamond",
+      "wardSeoName": "nove-mesto",
+      "quarterSeoName": "praha-1",
+      "citySeoName": "praha"
+    },
+    "priceCzk": 9490000,
+    "priceCzkPerSqM": 87870,
+    "priceSummaryCzk": 9490000,
+    "priceSummaryUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "priceUnitCb": {
+      "name": "za nemovitost",
+      "value": 1
+    },
+    "watchdogBadge": "none"
+  }
+]

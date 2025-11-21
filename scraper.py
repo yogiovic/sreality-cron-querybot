@@ -12,6 +12,8 @@ import os
 import sys
 from urllib.parse import urljoin, urlparse
 import unicodedata
+import hashlib
+import logging
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -20,6 +22,9 @@ headers = {
 
 OUT_DIR = os.path.abspath(os.path.dirname(__file__))
 BASE_DOMAIN = 'https://www.sreality.cz'
+
+# module logger (configured in main)
+logger = logging.getLogger(__name__)
 
 
 def save_file(name, content):
@@ -33,10 +38,10 @@ def save_file(name, content):
 
 
 def fetch_page(url, timeout=20):
-    print(f"Fetching: {url}")
+    logger.info("Fetching: %s", url)
     resp = requests.get(url, headers=headers, timeout=timeout)
     resp.raise_for_status()
-    print(f"HTTP {resp.status_code}, content-length {len(resp.content)} bytes")
+    logger.debug("HTTP %s, content-length %d bytes", resp.status_code, len(resp.content))
     return resp.text
 
 
@@ -129,7 +134,7 @@ def extract_results_from_html(html, page_num=1, save_candidates=False, save_item
         if save_candidates:
             save_file(f'script_candidate_p{page_num}_{i}.txt', content)
 
-    print(f"Page {page_num}: Found {len(candidates)} JSON-like <script> candidate(s), extracted {len(results_lists)} results-list(s)")
+    logger.info("Page %d: found %d JSON-like <script> candidate(s), extracted %d results-list(s)", page_num, len(candidates), len(results_lists))
 
     if not results_lists:
         return [], soup
@@ -269,7 +274,38 @@ def get_listing_url(item):
     return None
 
 
-def scrape_all_pages(start_url, max_pages=50, keep_individual=False):
+def make_query_key(source: str) -> str:
+    """Create a short, filesystem-safe key for a given URL or local path.
+    Uses domain/path slug plus a short sha1 suffix to avoid collisions.
+    """
+    if not source:
+        return 'default'
+    try:
+        # If it's a local path, base on its basename
+        if os.path.exists(source):
+            base = os.path.basename(source)
+            h = hashlib.sha1(source.encode('utf-8')).hexdigest()[:8]
+            base_safe = re.sub(r'[^0-9a-zA-Z\-_]', '-', base)
+            return f"{base_safe}-{h}"
+    except Exception:
+        pass
+    try:
+        p = urlparse(source)
+        domain = p.hostname or 'site'
+        path = (p.path or '').strip('/')
+        path_safe = re.sub(r'[^0-9a-zA-Z\-_]', '-', path)[:60]
+        h = hashlib.sha1(source.encode('utf-8')).hexdigest()[:8]
+        if path_safe:
+            key = f"{domain}-{path_safe}-{h}"
+        else:
+            key = f"{domain}-{h}"
+        key = re.sub(r'[^0-9a-zA-Z\-_]', '-', key)
+        return key[:80]
+    except Exception:
+        return hashlib.sha1(source.encode('utf-8')).hexdigest()[:12]
+
+
+def scrape_all_pages(start_url, max_pages=50, keep_individual=False, query_id: str = None):
     current = start_url
     page_num = 1
     all_results = []
@@ -293,13 +329,13 @@ def scrape_all_pages(start_url, max_pages=50, keep_individual=False):
 
         next_url = find_next_page_url(soup, current)
         if not next_url:
-            print(f"No next page found after page {page_num}.")
+            logger.info("No next page found after page %d.", page_num)
             break
         if next_url == current:
-            print("Next page URL same as current, stopping to avoid loop.")
+            logger.warning("Next page URL identical to current page; stopping to avoid loop.")
             break
 
-        print(f"Page {page_num} -> next: {next_url}")
+        logger.info("Page %d -> next: %s", page_num, next_url)
         current = next_url
         page_num += 1
 
@@ -314,16 +350,64 @@ def scrape_all_pages(start_url, max_pages=50, keep_individual=False):
             # do not override if user already provided a canonical url field; store under 'listingUrl'
             r['listingUrl'] = url
 
+    # Per-query results filename (fallback to global results.json)
+    if query_id:
+        prev_path = os.path.join(OUT_DIR, f'results_{query_id}.json')
+        out_path = os.path.join(OUT_DIR, f'results_{query_id}.json')
+    else:
+        prev_path = os.path.join(OUT_DIR, 'results.json')
+        out_path = prev_path
+
+    prev_ids = set()
+    if os.path.exists(prev_path):
+        try:
+            with open(prev_path, 'r', encoding='utf-8') as pf:
+                prev = json.load(pf)
+            for pr in prev:
+                if isinstance(pr, dict):
+                    pid = pr.get('id') or pr.get('hash') or pr.get('seoUrl')
+                    if pid is not None:
+                        prev_ids.add(str(pid))
+        except Exception:
+            prev_ids = set()
+
+    if not os.path.exists(prev_path):
+        logger.info('No previous %s found — saving current run as baseline (no new_listings will be emitted).', os.path.basename(out_path))
+    else:
+        new_items = []
+        for r in all_results:
+            if not isinstance(r, dict):
+                continue
+            rid = r.get('id') or r.get('hash') or r.get('seoUrl')
+            if rid is None:
+                continue
+            if str(rid) not in prev_ids:
+                new_items.append(r)
+        if new_items:
+            fname = f'new_listings_{query_id}.json' if query_id else 'new_listings.json'
+            tmp_name = fname + '.tmp'
+            save_file(tmp_name, new_items)
+            try:
+                os.replace(os.path.join(OUT_DIR, tmp_name), os.path.join(OUT_DIR, fname))
+            except Exception:
+                save_file(fname, new_items)
+            logger.info('Detected %d new listing(s) since last run; saved to %s', len(new_items), fname)
+        else:
+            logger.info('No new listings since last run.')
+
+    # Save canonical per-query results and also write a legacy results.json for backward compatibility
+    save_file(os.path.basename(out_path), all_results)
+    # also keep a global results.json copy for convenience
     save_file('results.json', all_results)
-    print(f"Aggregated total results: {len(all_results)} (saved to results.json)")
+    logger.info('Aggregated total results: %d (saved to %s)', len(all_results), out_path)
 
     # Optionally save per-item files (kept only when keep_individual True)
     if keep_individual:
         for i, r in enumerate(all_results, 1):
             save_file(f'result_{i}.json', r)
 
-    # Print all results with clickable URLs
-    print('\nAll found results:')
+    # Print all results with clickable URLs (concise)
+    logger.info('All found results:')
     for i, r in enumerate(all_results, 1):
         name = r.get('name') or r.get('title') or r.get('headline') if isinstance(r, dict) else ''
         rid = r.get('id') if isinstance(r, dict) else None
@@ -331,8 +415,7 @@ def scrape_all_pages(start_url, max_pages=50, keep_individual=False):
         if isinstance(r, dict):
             price = r.get('priceSummaryCzk') or r.get('priceCzk') or r.get('price') or ''
         url = get_listing_url(r) or ''
-        # Print index, name, id, price, and full URL (clickable in most terminals/IDE consoles)
-        print(f"{i}. {name} | id={rid} | price={price} | {url}")
+        logger.info('%d. %s | id=%s | price=%s | %s', i, name, rid, price, url)
 
     return all_results
 
@@ -372,7 +455,7 @@ def cleanup_old_artifacts(keep_files=None, keep_patterns=None):
                     except Exception:
                         pass
                     break
-    print(f"Cleaned {len(removed)} old artifact(s): {removed}")
+    logger.info('Cleaned %d old artifact(s): %s', len(removed), removed)
     return removed
 
 
@@ -382,11 +465,16 @@ def main():
     parser.add_argument('--max-pages', type=int, default=50, help='Maximum pages to follow')
     parser.add_argument('--keep-items', action='store_true', help='Keep per-item json files')
     parser.add_argument('--clean', action='store_true', help='Remove old artifact files before running')
+    parser.add_argument('--verbose', action='store_true', help='Enable verbose (debug) logging')
     args = parser.parse_args()
+
+    # configure logging: INFO by default, DEBUG when --verbose
+    logging.basicConfig(format='[%(levelname)s] %(message)s', level=logging.DEBUG if args.verbose else logging.INFO)
+    logger.setLevel(logging.DEBUG if args.verbose else logging.INFO)
 
     start_url = args.url or os.environ.get('SCRAPE_URL') or ''
     if not start_url:
-        print('No URL provided. Use --url or set SCRAPE_URL env var.')
+        logger.error('No URL provided. Use --url or set SCRAPE_URL env var.')
         sys.exit(1)
 
     if args.clean:
@@ -395,7 +483,10 @@ def main():
         keep_pats = {'results_p*.json'}
         cleanup_old_artifacts(keep_files=keep, keep_patterns=keep_pats)
 
-    all_results = scrape_all_pages(start_url, max_pages=args.max_pages, keep_individual=args.keep_items)
+    # compute per-query key from the URL/path (no user-provided id required)
+    query_key = make_query_key(start_url)
+
+    all_results = scrape_all_pages(start_url, max_pages=args.max_pages, keep_individual=args.keep_items, query_id=query_key)
 
 
 if __name__ == '__main__':
