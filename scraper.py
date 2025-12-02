@@ -10,10 +10,8 @@ import re
 import json
 import os
 import sys
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin, urlparse, parse_qs, urlencode, urlunparse
 import unicodedata
-import hashlib
-import logging
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -23,12 +21,14 @@ headers = {
 OUT_DIR = os.path.abspath(os.path.dirname(__file__))
 BASE_DOMAIN = 'https://www.sreality.cz'
 
-# module logger (configured in main)
-logger = logging.getLogger(__name__)
 
+def save_file(name, content, output_dir=None):
+    if output_dir is None:
+        output_dir = OUT_DIR
 
-def save_file(name, content):
-    path = os.path.join(OUT_DIR, name)
+    os.makedirs(output_dir, exist_ok=True)
+
+    path = os.path.join(output_dir, name)
     with open(path, 'w', encoding='utf-8') as f:
         if isinstance(content, (dict, list)):
             json.dump(content, f, ensure_ascii=False, indent=2)
@@ -38,10 +38,10 @@ def save_file(name, content):
 
 
 def fetch_page(url, timeout=20):
-    logger.info("Fetching: %s", url)
+    print(f"Fetching: {url}")
     resp = requests.get(url, headers=headers, timeout=timeout)
     resp.raise_for_status()
-    logger.debug("HTTP %s, content-length %d bytes", resp.status_code, len(resp.content))
+    print(f"HTTP {resp.status_code}, content-length {len(resp.content)} bytes")
     return resp.text
 
 
@@ -121,7 +121,7 @@ def find_json_candidates(soup):
     return candidates
 
 
-def extract_results_from_html(html, page_num=1, save_candidates=False, save_items=False):
+def extract_results_from_html(html, page_num=1, save_artifacts=False, output_dir=None):
     soup = BeautifulSoup(html, 'html.parser')
     candidates = find_json_candidates(soup)
     results_lists = []
@@ -131,10 +131,10 @@ def extract_results_from_html(html, page_num=1, save_candidates=False, save_item
         for obj in objs:
             results_lists.extend(find_results_lists(obj))
         # save candidate only when requested
-        if save_candidates:
-            save_file(f'script_candidate_p{page_num}_{i}.txt', content)
+        if save_artifacts:
+            save_file(f'script_candidate_p{page_num}_{i}.txt', content, output_dir=output_dir)
 
-    logger.info("Page %d: found %d JSON-like <script> candidate(s), extracted %d results-list(s)", page_num, len(candidates), len(results_lists))
+    print(f"Page {page_num}: Found {len(candidates)} JSON-like <script> candidate(s), extracted {len(results_lists)} results-list(s)")
 
     if not results_lists:
         return [], soup
@@ -142,13 +142,15 @@ def extract_results_from_html(html, page_num=1, save_candidates=False, save_item
     # Choose the longest results list (most likely the main one)
     results = max(results_lists, key=lambda x: len(x))
 
-    # Save page-level results
-    save_file(f'results_p{page_num}.json', results)
+    if save_artifacts:
+        # Save page-level results
+        save_file(f'results_p{page_num}.json', results, output_dir=output_dir)
 
-    # Save individual items only when requested
-    if save_items:
-        for i, r in enumerate(results, 1):
-            save_file(f'extracted_p{page_num}_{i}.json', r)
+        # Save individual items only when requested
+        # This part is not currently used by the bot but kept for standalone script utility
+        # if save_items:
+        #     for i, r in enumerate(results, 1):
+        #         save_file(f'extracted_p{page_num}_{i}.json', r, output_dir=output_dir)
 
     return results, soup
 
@@ -184,67 +186,134 @@ def find_next_page_url(soup, current_url):
     return None
 
 
+def build_next_page_url_sreality(current_url: str, page_num: int) -> str:
+    """Build the next Sreality page URL by incrementing the 'strana' query parameter.
+
+    We normalize the query string so that 'strana' appears first, matching URLs
+    like:
+      https://www.sreality.cz/hledani/prodej/domy?strana=2&cena-od=8000000&...
+
+    If 'strana' is missing, we assume the current page number is `page_num` and
+    set strana=page_num+1.
+    """
+    parsed = urlparse(current_url)
+    qs = parse_qs(parsed.query, keep_blank_values=True)
+
+    # Determine current page
+    if 'strana' in qs and qs['strana']:
+        try:
+            cur_page = int(qs['strana'][0] or page_num)
+        except ValueError:
+            cur_page = page_num
+    else:
+        cur_page = page_num
+
+    next_page = cur_page + 1
+
+    # Remove any existing 'strana' to rebuild it cleanly at the front
+    if 'strana' in qs:
+        del qs['strana']
+
+    # Preserve other query parameters but ensure 'strana' is first
+    ordered_pairs = [('strana', str(next_page))]
+    for key, values in qs.items():
+        for value in values:
+            ordered_pairs.append((key, value))
+
+    new_query = urlencode(ordered_pairs)
+    return urlunparse(parsed._replace(query=new_query))
+
+
 def get_listing_url(item):
     if not isinstance(item, dict):
         return None
-    # Common fields that contain URL or SEO path
+
+    # 1) Prefer direct URL/SEO fields that Sreality provides on the result item
     for key in ('seoUrl', 'seo_url', 'seoUri', 'url', 'canonical', 'permalink', 'href'):
         v = item.get(key)
-        if v:
-            if isinstance(v, (int, float)):
-                v = str(v)
-            if v.startswith('http'):
-                return v
-            # sometimes it's like '/detail/..'
-            return urljoin(BASE_DOMAIN, v)
+        if not v:
+            continue
+        if isinstance(v, (int, float)):
+            v = str(v)
+        if not isinstance(v, str):
+            continue
+        if v.startswith('http'):
+            return v
+        # relative SEO path like '/detail/prodej/...'
+        return urljoin(BASE_DOMAIN, v)
 
-    # sometimes nested under 'seo' or 'link'
+    # 2) Sometimes URL-ish fields are nested under 'seo' or 'link'
     for key in ('seo', 'link'):
         v = item.get(key)
-        if isinstance(v, dict):
-            for kk in ('url', 'href', 'seoUrl'):
-                vv = v.get(kk)
-                if vv:
-                    return urljoin(BASE_DOMAIN, vv) if not vv.startswith('http') else vv
-    # fallback: if we have 'hash' or 'id' we can build a detail URL
+        if not isinstance(v, dict):
+            continue
+        for kk in ('url', 'href', 'seoUrl'):
+            vv = v.get(kk)
+            if not vv:
+                continue
+            if isinstance(vv, (int, float)):
+                vv = str(vv)
+            if not isinstance(vv, str):
+                continue
+            if vv.startswith('http'):
+                return vv
+            return urljoin(BASE_DOMAIN, vv)
+
+    # 3) Fallbacks based on id/hash and category/locality data to reconstruct SEO path
     idv = item.get('id') or item.get('hash')
-    # NEW: try to build SEO-friendly URL using category and locality fields
-    def norm(s):
+
+    # Helper: normalize Czech text to URL slug while preserving room layout patterns like '3+kk'
+    def norm(s, *, keep_plus_pattern: bool = False):
         if not s:
             return ''
         if not isinstance(s, str):
             s = str(s)
-        s = s.lower()
+        s = s.strip().lower()
         s = unicodedata.normalize('NFKD', s)
         s = ''.join(ch for ch in s if not unicodedata.combining(ch))
+        if keep_plus_pattern:
+            # Keep digits, letters, spaces and '+' to preserve e.g. "3+kk".
+            s = re.sub(r"[^a-z0-9+\s]", '', s)
+            # Collapse whitespace to dashes but keep '+' intact.
+            s = re.sub(r"\s+", '-', s)
+            s = s.strip('-')
+            return s
+        # Default behavior: no '+' special casing (used for locality, etc.)
         s = s.replace('&', 'a')
         s = re.sub(r"[^a-z0-9\-\s]", '', s)
         s = re.sub(r"[\s]+", '-', s)
         s = s.strip('-')
         return s
 
-    # Build seo path pieces
     if isinstance(item, dict):
-        # transaction type: e.g., Prodej -> prodej
+        # Transaction type, e.g. "Prodej" -> "prodej"
         trans = None
-        if item.get('categoryTypeCb') and isinstance(item['categoryTypeCb'], dict):
+        if isinstance(item.get('categoryTypeCb'), dict):
             trans = norm(item['categoryTypeCb'].get('name'))
-        # main type and sub type
+
+        # Main and sub category
         main = None
         sub = None
-        if item.get('categoryMainCb') and isinstance(item['categoryMainCb'], dict):
+        if isinstance(item.get('categoryMainCb'), dict):
             main = norm(item['categoryMainCb'].get('name'))
-        if item.get('categorySubCb') and isinstance(item['categorySubCb'], dict):
-            sub = norm(item['categorySubCb'].get('name'))
+        if isinstance(item.get('categorySubCb'), dict):
+            raw_sub = item['categorySubCb'].get('name') if isinstance(item.get('categorySubCb'), dict) else None
+            # Many flats have subcategory like "3+kk", "2+1", etc. Preserve the plus.
+            sub = norm(raw_sub, keep_plus_pattern=True) if raw_sub else None
 
-        # prefer short canonical main type mapping (plural->singular) for common categories
+        # Map common plural main categories to singular slug used in Sreality URLs
         main_map = {
-            'domy': 'dum', 'byty': 'byt', 'pozemky': 'pozemek', 'garaze': 'garaz', 'prodej': 'prodej'
+            'domy': 'dum',
+            'byty': 'byt',
+            'pozemky': 'pozemek',
+            'garaze': 'garaz',
         }
         main_slug = main_map.get(main, main) if main else None
 
-        # locality pieces
+        # Locality info
         locality = item.get('locality') or {}
+        if not isinstance(locality, dict):
+            locality = {}
         city = norm(locality.get('citySeoName') or locality.get('city') or '')
         citypart = norm(locality.get('cityPartSeoName') or locality.get('cityPart') or '')
         street = norm(locality.get('streetSeoName') or locality.get('street') or '')
@@ -268,53 +337,41 @@ def get_listing_url(item):
             path = '/' + '/'.join(pieces)
             return urljoin(BASE_DOMAIN, path)
 
-    # last fallback
+    # 4) Last-resort numeric detail URL
     if idv:
         return urljoin(BASE_DOMAIN, f"/detail/{idv}")
+
     return None
 
 
-def make_query_key(source: str) -> str:
-    """Create a short, filesystem-safe key for a given URL or local path.
-    Uses domain/path slug plus a short sha1 suffix to avoid collisions.
-    """
-    if not source:
-        return 'default'
-    try:
-        # If it's a local path, base on its basename
-        if os.path.exists(source):
-            base = os.path.basename(source)
-            h = hashlib.sha1(source.encode('utf-8')).hexdigest()[:8]
-            base_safe = re.sub(r'[^0-9a-zA-Z\-_]', '-', base)
-            return f"{base_safe}-{h}"
-    except Exception:
-        pass
-    try:
-        p = urlparse(source)
-        domain = p.hostname or 'site'
-        path = (p.path or '').strip('/')
-        path_safe = re.sub(r'[^0-9a-zA-Z\-_]', '-', path)[:60]
-        h = hashlib.sha1(source.encode('utf-8')).hexdigest()[:8]
-        if path_safe:
-            key = f"{domain}-{path_safe}-{h}"
-        else:
-            key = f"{domain}-{h}"
-        key = re.sub(r'[^0-9a-zA-Z\-_]', '-', key)
-        return key[:80]
-    except Exception:
-        return hashlib.sha1(source.encode('utf-8')).hexdigest()[:12]
-
-
-def scrape_all_pages(start_url, max_pages=50, keep_individual=False, query_id: str = None):
+def scrape_all_pages(start_url, max_pages=50, save_artifacts=False, output_dir=None):
     current = start_url
     page_num = 1
     all_results = []
     seen_ids = set()
 
+    if output_dir:
+        os.makedirs(output_dir, exist_ok=True)
+
     while current and page_num <= max_pages:
-        html = fetch_page(current)
-        save_file(f'page_raw_p{page_num}.html', html)
-        results, soup = extract_results_from_html(html, page_num=page_num, save_candidates=keep_individual, save_items=keep_individual)
+        try:
+            html = fetch_page(current)
+            if save_artifacts:
+                save_file(f'page_raw_p{page_num}.html', html, output_dir=output_dir)
+
+            results, soup = extract_results_from_html(
+                html,
+                page_num=page_num,
+                save_artifacts=save_artifacts,
+                output_dir=output_dir
+            )
+        except requests.HTTPError as e:
+            print(f"Stopping pagination due to HTTP error on page {page_num}: {e}")
+            break # Stop if a page fails to load (e.g., 404 on a page beyond the end)
+        except Exception as e:
+            print(f"An error occurred on page {page_num}: {e}")
+            # Decide if you want to break or continue
+            break
 
         for r in results:
             rid = None
@@ -327,15 +384,20 @@ def scrape_all_pages(start_url, max_pages=50, keep_individual=False, query_id: s
                 seen_ids.add(rid)
             all_results.append(r)
 
-        next_url = find_next_page_url(soup, current)
+        # Prefer deterministic URL-based pagination using 'strana'
+        try:
+            next_url = build_next_page_url_sreality(current, page_num)
+        except Exception:
+            next_url = find_next_page_url(soup, current)
+
         if not next_url:
-            logger.info("No next page found after page %d.", page_num)
+            print(f"No next page found after page {page_num}.")
             break
         if next_url == current:
-            logger.warning("Next page URL identical to current page; stopping to avoid loop.")
+            print("Next page URL same as current, stopping to avoid loop.")
             break
 
-        logger.info("Page %d -> next: %s", page_num, next_url)
+        print(f"Page {page_num} -> next: {next_url}")
         current = next_url
         page_num += 1
 
@@ -350,64 +412,12 @@ def scrape_all_pages(start_url, max_pages=50, keep_individual=False, query_id: s
             # do not override if user already provided a canonical url field; store under 'listingUrl'
             r['listingUrl'] = url
 
-    # Per-query results filename (fallback to global results.json)
-    if query_id:
-        prev_path = os.path.join(OUT_DIR, f'results_{query_id}.json')
-        out_path = os.path.join(OUT_DIR, f'results_{query_id}.json')
-    else:
-        prev_path = os.path.join(OUT_DIR, 'results.json')
-        out_path = prev_path
+    if save_artifacts:
+        save_file('results.json', all_results, output_dir=output_dir)
+        print(f"Aggregated total results: {len(all_results)} (saved to {os.path.join(output_dir, 'results.json')})")
 
-    prev_ids = set()
-    if os.path.exists(prev_path):
-        try:
-            with open(prev_path, 'r', encoding='utf-8') as pf:
-                prev = json.load(pf)
-            for pr in prev:
-                if isinstance(pr, dict):
-                    pid = pr.get('id') or pr.get('hash') or pr.get('seoUrl')
-                    if pid is not None:
-                        prev_ids.add(str(pid))
-        except Exception:
-            prev_ids = set()
-
-    if not os.path.exists(prev_path):
-        logger.info('No previous %s found — saving current run as baseline (no new_listings will be emitted).', os.path.basename(out_path))
-    else:
-        new_items = []
-        for r in all_results:
-            if not isinstance(r, dict):
-                continue
-            rid = r.get('id') or r.get('hash') or r.get('seoUrl')
-            if rid is None:
-                continue
-            if str(rid) not in prev_ids:
-                new_items.append(r)
-        if new_items:
-            fname = f'new_listings_{query_id}.json' if query_id else 'new_listings.json'
-            tmp_name = fname + '.tmp'
-            save_file(tmp_name, new_items)
-            try:
-                os.replace(os.path.join(OUT_DIR, tmp_name), os.path.join(OUT_DIR, fname))
-            except Exception:
-                save_file(fname, new_items)
-            logger.info('Detected %d new listing(s) since last run; saved to %s', len(new_items), fname)
-        else:
-            logger.info('No new listings since last run.')
-
-    # Save canonical per-query results and also write a legacy results.json for backward compatibility
-    save_file(os.path.basename(out_path), all_results)
-    # also keep a global results.json copy for convenience
-    save_file('results.json', all_results)
-    logger.info('Aggregated total results: %d (saved to %s)', len(all_results), out_path)
-
-    # Optionally save per-item files (kept only when keep_individual True)
-    if keep_individual:
-        for i, r in enumerate(all_results, 1):
-            save_file(f'result_{i}.json', r)
-
-    # Print all results with clickable URLs (concise)
-    logger.info('All found results:')
+    # Print all results with clickable URLs
+    print('\nAll found results:')
     for i, r in enumerate(all_results, 1):
         name = r.get('name') or r.get('title') or r.get('headline') if isinstance(r, dict) else ''
         rid = r.get('id') if isinstance(r, dict) else None
@@ -415,7 +425,8 @@ def scrape_all_pages(start_url, max_pages=50, keep_individual=False, query_id: s
         if isinstance(r, dict):
             price = r.get('priceSummaryCzk') or r.get('priceCzk') or r.get('price') or ''
         url = get_listing_url(r) or ''
-        logger.info('%d. %s | id=%s | price=%s | %s', i, name, rid, price, url)
+        # Print index, name, id, price, and full URL (clickable in most terminals/IDE consoles)
+        print(f"{i}. {name} | id={rid} | price={price} | {url}")
 
     return all_results
 
@@ -455,7 +466,7 @@ def cleanup_old_artifacts(keep_files=None, keep_patterns=None):
                     except Exception:
                         pass
                     break
-    logger.info('Cleaned %d old artifact(s): %s', len(removed), removed)
+    print(f"Cleaned {len(removed)} old artifact(s): {removed}")
     return removed
 
 
@@ -465,16 +476,11 @@ def main():
     parser.add_argument('--max-pages', type=int, default=50, help='Maximum pages to follow')
     parser.add_argument('--keep-items', action='store_true', help='Keep per-item json files')
     parser.add_argument('--clean', action='store_true', help='Remove old artifact files before running')
-    parser.add_argument('--verbose', action='store_true', help='Enable verbose (debug) logging')
     args = parser.parse_args()
-
-    # configure logging: INFO by default, DEBUG when --verbose
-    logging.basicConfig(format='[%(levelname)s] %(message)s', level=logging.DEBUG if args.verbose else logging.INFO)
-    logger.setLevel(logging.DEBUG if args.verbose else logging.INFO)
 
     start_url = args.url or os.environ.get('SCRAPE_URL') or ''
     if not start_url:
-        logger.error('No URL provided. Use --url or set SCRAPE_URL env var.')
+        print('No URL provided. Use --url or set SCRAPE_URL env var.')
         sys.exit(1)
 
     if args.clean:
@@ -483,10 +489,7 @@ def main():
         keep_pats = {'results_p*.json'}
         cleanup_old_artifacts(keep_files=keep, keep_patterns=keep_pats)
 
-    # compute per-query key from the URL/path (no user-provided id required)
-    query_key = make_query_key(start_url)
-
-    all_results = scrape_all_pages(start_url, max_pages=args.max_pages, keep_individual=args.keep_items, query_id=query_key)
+    all_results = scrape_all_pages(start_url, max_pages=args.max_pages, keep_individual=args.keep_items)
 
 
 if __name__ == '__main__':
