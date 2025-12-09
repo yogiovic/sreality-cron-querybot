@@ -1,0 +1,43 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyCharm project files
+.idea/
+
+# Distribution / packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Generated scraper artifacts (ignore everything generated, but keep results.json and per-page results)
+extracted_*.json
+extracted_p*_*
+result_*.json
+script_candidate_*.txt
+page_raw*.html
+page_pretty*.html
+
+# Un-ignore the main aggregated results we want to keep
+!results.json
+!results_p*.json
+
+# macOS
+.DS_Store
+
+# Virtual environments
+.env
+.venv
+venv/
+
+# Node
+node_modules/
+
+# Ignore local environment files
+.env.local
