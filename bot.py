@@ -432,6 +432,151 @@ async def reset_watchdog(interaction: discord.Interaction, channel: discord.Text
         await interaction.followup.send(f"Failed to reset watchdog: {e}")
 
 
+@tree.command(name="update_webhook", description="Manually set a new webhook URL for a watchdog channel.")
+@app_commands.describe(
+    channel="Watchdog channel to update",
+    webhook_url="The new Discord webhook URL to use for notifications",
+)
+async def update_webhook(
+    interaction: discord.Interaction,
+    channel: discord.TextChannel,
+    webhook_url: str,
+):
+    """Manually update the webhook URL for a watchdog (useful if webhook was deleted)."""
+    if interaction.channel_id != COMMAND_CHANNEL_ID:
+        await interaction.response.send_message(
+            "Bot commands can only be used in the designated command channel.",
+            ephemeral=True,
+        )
+        return
+
+    watchdogs = load_watchdogs()
+    w = find_watchdog_by_channel(watchdogs, channel.id)
+    if not w:
+        await interaction.response.send_message("This channel is not a watchdog channel.")
+        return
+
+    # Basic validation of webhook URL
+    if not webhook_url.startswith("https://discord.com/api/webhooks/"):
+        await interaction.response.send_message(
+            "Invalid webhook URL. It should start with `https://discord.com/api/webhooks/`",
+            ephemeral=True,
+        )
+        return
+
+    old_url = w.get('webhook_url', 'none')
+    w['webhook_url'] = webhook_url
+    save_watchdogs(watchdogs)
+
+    await interaction.response.send_message(
+        f"Updated webhook URL for {channel.mention}. New notifications will use the new webhook."
+    )
+
+
+@tree.command(name="regenerate_webhook", description="Delete old webhook and create a new one for a watchdog channel.")
+@app_commands.describe(channel="Watchdog channel to regenerate webhook for")
+async def regenerate_webhook(interaction: discord.Interaction, channel: discord.TextChannel):
+    """Automatically create a new webhook for a watchdog channel."""
+    if interaction.channel_id != COMMAND_CHANNEL_ID:
+        await interaction.response.send_message(
+            "Bot commands can only be used in the designated command channel.",
+            ephemeral=True,
+        )
+        return
+
+    await interaction.response.defer(thinking=True)
+
+    watchdogs = load_watchdogs()
+    w = find_watchdog_by_channel(watchdogs, channel.id)
+    if not w:
+        await interaction.followup.send("This channel is not a watchdog channel.")
+        return
+
+    try:
+        # Try to delete old webhooks created by this bot
+        webhooks = await channel.webhooks()
+        for wh in webhooks:
+            if wh.user == bot.user:
+                await wh.delete()
+
+        # Create new webhook
+        channel_name = w.get('name') or channel.name
+        new_webhook = await channel.create_webhook(name=f"{channel_name}-updates")
+        w['webhook_url'] = new_webhook.url
+        save_watchdogs(watchdogs)
+
+        await interaction.followup.send(
+            f"Successfully regenerated webhook for {channel.mention}. Notifications should now work."
+        )
+    except Exception as e:
+        await interaction.followup.send(f"Failed to regenerate webhook: {e}")
+
+
+@tree.command(name="status", description="Check bot status, configuration, and token validity.")
+async def status(interaction: discord.Interaction):
+    """Show bot status and verify configuration is working."""
+    if interaction.channel_id != COMMAND_CHANNEL_ID:
+        await interaction.response.send_message(
+            "Bot commands can only be used in the designated command channel.",
+            ephemeral=True,
+        )
+        return
+
+    await interaction.response.defer(thinking=True)
+
+    lines = ["**Bot Status Check**\n"]
+
+    # Bot connection
+    lines.append(f"✅ **Bot connected:** {bot.user} (ID: {bot.user.id})")
+
+    # Guild check
+    guild = bot.get_guild(GUILD_ID)
+    if guild:
+        lines.append(f"✅ **Guild found:** {guild.name} (ID: {GUILD_ID})")
+    else:
+        lines.append(f"❌ **Guild NOT found:** ID {GUILD_ID} - check GUILD_ID env var")
+
+    # Command channel check
+    cmd_channel = bot.get_channel(COMMAND_CHANNEL_ID)
+    if cmd_channel:
+        lines.append(f"✅ **Command channel:** {cmd_channel.name} (ID: {COMMAND_CHANNEL_ID})")
+    else:
+        lines.append(f"❌ **Command channel NOT found:** ID {COMMAND_CHANNEL_ID} - check COMMAND_CHANNEL_ID env var")
+
+    # Watchdogs summary
+    watchdogs = load_watchdogs()
+    lines.append(f"\n**Watchdogs:** {len(watchdogs)} active")
+
+    # Check each watchdog's webhook and channel
+    for w in watchdogs:
+        name = w.get('name', 'unknown')
+        channel_id = w.get('channel_id')
+        webhook_url = w.get('webhook_url', '')
+        last_check = w.get('last_check') or 'never'
+
+        channel = bot.get_channel(channel_id) if channel_id else None
+        channel_status = "✅" if channel else "❌ channel missing"
+
+        # Test webhook
+        webhook_status = "⏳"
+        if webhook_url:
+            try:
+                # Just do a GET to check if webhook exists (doesn't post anything)
+                response = requests.get(webhook_url, timeout=5)
+                if response.status_code == 200:
+                    webhook_status = "✅"
+                else:
+                    webhook_status = f"❌ ({response.status_code})"
+            except Exception as e:
+                webhook_status = f"❌ ({e})"
+        else:
+            webhook_status = "❌ no URL"
+
+        lines.append(f"• `{name}`: channel {channel_status}, webhook {webhook_status}, last check: {last_check}")
+
+    await interaction.followup.send("\n".join(lines))
+
+
 @tree.command(name="help_watchdog", description="Show help for all Sreality watchdog commands.")
 async def help_watchdog(interaction: discord.Interaction):
     """Display a concise overview of all commands and their usage."""
@@ -457,6 +602,12 @@ async def help_watchdog(interaction: discord.Interaction):
         "Change how often a specific watchdog is checked for new listings.\n\n"
         "`/reset_watchdog channel:<watchdog_channel>`\n"
         "Reset a watchdog: redo the initial deep scan from scratch and rebuild the known listings set.\n\n"
+        "`/regenerate_webhook channel:<watchdog_channel>`\n"
+        "Automatically create a new webhook if notifications stopped working.\n\n"
+        "`/update_webhook channel:<watchdog_channel> webhook_url:<url>`\n"
+        "Manually set a webhook URL for a watchdog channel.\n\n"
+        "`/status`\n"
+        "Check bot status, verify tokens are valid, and test webhook connectivity.\n\n"
         "New listing notifications are posted into each watchdog channel and tag the user who created the watchdog."
     )
 
@@ -541,7 +692,7 @@ async def start_health_server():
     port = int(os.getenv('PORT', 8080))
     site = web.TCPSite(runner, '0.0.0.0', port)
     await site.start()
-    print(f"Health server started on port {port}")
+    print(f"Health server started and listening on port {port}", flush=True)
 
 
 @bot.event
