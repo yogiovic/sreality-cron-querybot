@@ -7,8 +7,9 @@ from discord.ext import commands
 from discord import app_commands
 from dotenv import load_dotenv
 import asyncio
-from scraper import scrape_all_pages, cleanup_old_artifacts
+from scraper import scrape_all_pages
 import requests
+from aiohttp import web
 
 # --- Setup ---
 load_dotenv()
@@ -19,7 +20,6 @@ WATCHDOGS_FILE = 'watchdogs.json'
 
 intents = discord.Intents.default()
 intents.guilds = True  # we only need guilds for slash commands + channels/webhooks
-intents.message_content = False  # explicitly disable to silence warning (not needed for slash commands)
 
 bot = commands.Bot(command_prefix='!', intents=intents)
 # Use the built-in application command tree from the bot
@@ -115,7 +115,7 @@ def slugify(url: str) -> str:
     return name
 
 
-def format_listing_message(listing, creator_mention: str = None) -> str:
+def format_listing_message(listing, creator_mention: str | None = None) -> str:
     name = listing.get('name', 'N/A')
     url = listing.get('listingUrl', '')
     parts = [f"**New Listing:** {name}"]
@@ -126,7 +126,7 @@ def format_listing_message(listing, creator_mention: str = None) -> str:
     return ' - '.join(parts)
 
 
-def post_to_webhook(webhook_url, listings, creator_mention: str = None):
+def post_to_webhook(webhook_url, listings, creator_mention: str | None = None):
     """Posts new listings to a Discord webhook with a simple, consistent format."""
     if not listings:
         return
@@ -450,31 +450,6 @@ async def help_watchdog(interaction: discord.Interaction):
     await interaction.response.send_message(help_text)
 
 
-# --- Smart Scheduling ---
-# Peak hours (8:00-22:00 local time) get more frequent checks.
-# We use ~70% of checks during peak hours (14h) and ~30% during off-peak (10h).
-PEAK_START_HOUR = 8
-PEAK_END_HOUR = 22
-
-
-def get_effective_interval(base_interval_minutes: int) -> int:
-    """
-    Returns the effective interval based on current hour.
-    During peak hours (8-22): checks are ~2x more frequent.
-    During off-peak hours (22-8): checks are ~2x less frequent.
-    This automatically distributes checks more densely when listings are posted.
-    """
-    current_hour = datetime.datetime.now().hour  # Use local time
-    is_peak = PEAK_START_HOUR <= current_hour < PEAK_END_HOUR
-
-    if is_peak:
-        # During peak: use 60% of the base interval (more frequent)
-        return max(1, int(base_interval_minutes * 0.6))
-    else:
-        # During off-peak: use 180% of the base interval (less frequent)
-        return max(1, int(base_interval_minutes * 1.8))
-
-
 # --- Background Scraping Task ---
 async def check_for_updates():
     await bot.wait_until_ready()
@@ -484,8 +459,7 @@ async def check_for_updates():
         for w in watchdogs:
             name = w.get('name')
             url = w.get('url')
-            base_interval = w.get('interval_minutes', DEFAULT_INTERVAL_MINUTES)
-            effective_interval = get_effective_interval(base_interval)
+            interval = w.get('interval_minutes', DEFAULT_INTERVAL_MINUTES)
             last_check_raw = w.get('last_check')
             if last_check_raw:
                 try:
@@ -500,13 +474,13 @@ async def check_for_updates():
                 due = True
             else:
                 delta_min = (now - last_check).total_seconds() / 60.0
-                if delta_min >= effective_interval:
+                if delta_min >= interval:
                     due = True
 
             if not due:
                 continue
 
-            print(f"Checking for updates for: {name} (url={url}, base_interval={base_interval}min, effective_interval={effective_interval}min)")
+            print(f"Checking for updates for: {name} (url={url}, interval={interval} min)")
             try:
                 all_listings = scrape_all_pages(url, max_pages=5, save_artifacts=False)
 
@@ -543,6 +517,20 @@ async def check_for_updates():
         await asyncio.sleep(60)
 
 
+async def start_health_server():
+    async def health(request):
+        return web.Response(text="OK", status=200)
+    app = web.Application()
+    app.router.add_get('/', health)
+    app.router.add_get('/health', health)
+    runner = web.AppRunner(app)
+    await runner.setup()
+    port = int(os.getenv('PORT', 8080))
+    site = web.TCPSite(runner, '0.0.0.0', port)
+    await site.start()
+    print(f"Health server started on port {port}")
+
+
 @bot.event
 async def on_ready():
     print(f'Logged in as {bot.user} (ID: {bot.user.id})')
@@ -555,5 +543,10 @@ async def on_ready():
     bot.loop.create_task(check_for_updates())
 
 
+async def main():
+    await start_health_server()
+    await bot.start(TOKEN)
+
+
 if __name__ == "__main__":
-    bot.run(TOKEN)
+    asyncio.run(main())

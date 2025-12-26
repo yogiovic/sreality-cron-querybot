@@ -1,7 +1,7 @@
 # Dockerfile for Sreality Watchdog Bot
 
 # Use an official Python runtime as a parent image
-FROM python:3.9-slim
+FROM python:3.10-slim
 
 # Set the working directory in the container
 WORKDIR /app
@@ -20,6 +20,8 @@ COPY . .
 
 # Make sure the data directory exists and is writable
 RUN mkdir -p /app/data && chmod -R 755 /app/data
+
+EXPOSE 8080
 
 # Define the command to run the bot
 CMD ["python", "bot.py"]

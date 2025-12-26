@@ -16,28 +16,34 @@ dist/
 *.log
 *.sqlite3
 
-# Generated scraper artifacts (ignore everything generated, but keep results.json and per-page results)
+# Generated scraper artifacts
 extracted_*.json
 extracted_p*_*
 result_*.json
+results_www-*.json
 script_candidate_*.txt
 page_raw*.html
 page_pretty*.html
+*.html
 
-# Un-ignore the main aggregated results we want to keep
-!results.json
-!results_p*.json
+# Scraped data directory (generated at runtime)
+data/
 
 # macOS
 .DS_Store
 
 # Virtual environments
-.env
-.venv
+.venv/
 venv/
+env/
+
+# Environment files with secrets
+.env
+.env.local
+.env.*.local
 
 # Node
 node_modules/
 
-# Ignore local environment files
-.env.local
+# Watchdogs state file (persisted at runtime, not for version control)
+watchdogs.json
