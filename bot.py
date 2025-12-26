@@ -131,6 +131,8 @@ def post_to_webhook(webhook_url, listings, creator_mention: str | None = None):
     if not listings:
         return
 
+    import time
+
     messages = [format_listing_message(l, creator_mention) for l in listings]
 
     # Send messages in chunks of 10 to avoid hitting Discord rate limits
@@ -138,9 +140,20 @@ def post_to_webhook(webhook_url, listings, creator_mention: str | None = None):
         chunk = messages[i:i+10]
         content = "\n".join(chunk)
         try:
-            requests.post(webhook_url, json={'content': content})
+            response = requests.post(webhook_url, json={'content': content}, timeout=10)
+            if response.status_code == 429:
+                retry_after = response.json().get('retry_after', 5)
+                print(f"Rate limited by Discord, waiting {retry_after}s...")
+                time.sleep(retry_after)
+                # Retry once
+                response = requests.post(webhook_url, json={'content': content}, timeout=10)
+            if response.status_code not in (200, 204):
+                print(f"Webhook error {response.status_code}: {response.text}")
+            else:
+                print(f"Successfully posted {len(chunk)} listings to webhook")
         except Exception as e:
             print(f"Failed to post to webhook: {e}")
+        time.sleep(1)  # Delay between batches to avoid rate limits
 
 
 # --- Bot Commands ---
